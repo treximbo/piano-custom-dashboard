@@ -456,6 +456,7 @@
     }
     brandSelect.addEventListener('change', () => { persistForm(); });
     restoreForm();
+    applyUrlParams();
   }
 
   function downloadFile(name, text) {
@@ -552,6 +553,33 @@
   // ---------------
   // Persistence
   // ---------------
+  function applyUrlParams() {
+    const params = new URLSearchParams(window.location.search || '');
+    if (params.size === 0) return;
+    let changed = false;
+
+    const brandParam = params.get('brand');
+    if (brandParam && brandSelect.querySelector(`option[value="${brandParam}"]`)) {
+      brandSelect.value = brandParam;
+      changed = true;
+    }
+
+    const expParam = params.get('expId');
+    if (expParam) { expIdInput.value = expParam; changed = true; }
+
+    const fromParam = params.get('from');
+    if (fromParam) { fromInput.value = fromParam; changed = true; }
+    const toParam = params.get('to');
+    if (toParam) { toInput.value = toParam; changed = true; }
+
+    const bearerParam = params.get('bearer');
+    if (bearerParam) { bearerInput.value = bearerParam; changed = true; }
+
+    if (changed) {
+      setMinMaxDates();
+      persistForm();
+    }
+  }
   function persistForm() {
     const state = {
       brand: brandSelect.value || '',
