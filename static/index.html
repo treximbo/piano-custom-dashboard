@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Piano Conversion Viewer</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Piano Conversion Viewer</h1>
+
+    <form id="fetch-form">
+      <div class="grid">
+        <label>
+          Brand
+          <select id="brand" name="brand">
+            <option value="">— Select —</option>
+            <option value="Accounting Today">Accounting Today</option>
+            <option value="American Banker">American Banker</option>
+            <option value="Digital Insurance">Digital Insurance</option>
+            <option value="Employee Benefit News">Employee Benefit News</option>
+            <option value="Financial Planning">Financial Planning</option>
+            <option value="National Mortgage News">National Mortgage News</option>
+            <option value="Bond Buyer">Bond Buyer</option>
+          </select>
+        </label>
+        <label>
+          Experience ID (expId)
+          <input id="expId" name="expId" />
+        </label>
+        <!-- AID is resolved from Brand; no need to expose field -->
+        <label>
+          Bearer token (stored locally)
+          <input id="bearer" name="bearer" type="password" placeholder="paste token" />
+        </label>
+        <label>
+          From (MM/DD/YYYY)
+          <input id="from" name="from" type="date" placeholder="mm/dd/yyyy" />
+        </label>
+        <label>
+          To (MM/DD/YYYY)
+          <input id="to" name="to" type="date" placeholder="mm/dd/yyyy" />
+        </label>
+      </div>
+      <div class="actions">
+        <button type="submit">Fetch report</button>
+        <button id="parse-local" type="button">Load sampleData.json</button>
+        <button id="download-csv" type="button" disabled>Generate CSV bundle</button>
+      </div>
+    </form>
+
+    <div id="status" class="status"></div>
+
+    <section id="action-cards" class="panel hidden">
+      <h2>Action Cards</h2>
+      <div class="table-wrap">
+        <table id="action-cards-table"></table>
+      </div>
+      <h3 id="selected-ac-title" class="hidden"></h3>
+      <div id="subscription-metrics" class="metrics hidden">
+        <h3>Total Associated Subscriptions</h3>
+        <div id="subTotalWrap" class="table-wrap hidden">
+          <table id="sub-total-table"></table>
+        </div>
+        <div id="subTotalEmpty" class="empty hidden">No Associated Subscriptions</div>
+        <h3 id="subTermTitle" class="hidden">Subscription Term Conversions</h3>
+        <div id="subTermWrap" class="table-wrap hidden">
+          <table id="sub-term-table"></table>
+        </div>
+      </div>
+      <h3 id="template-list-title" class="hidden">Templates for Selected Action</h3>
+      <div id="template-list" class="table-wrap hidden">
+        <table id="template-list-table"></table>
+      </div>
+      <h3 id="action-card-terms-title" class="hidden">Template Click Conversions</h3>
+      <div id="action-card-terms-wrap" class="table-wrap hidden">
+        <table id="action-card-terms-table"></table>
+      </div>
+    </section>
+
+    <section id="template-click-all" class="panel hidden">
+      <h2>All Template Click Conversions</h2>
+      <div id="template-click-all-wrap" class="table-wrap">
+        <table id="template-click-all-table"></table>
+      </div>
+    </section>
+
+    <section id="summary" class="panel hidden">
+      <h2>Summary</h2>
+      <div class="kpis">
+        <div class="kpi"><div class="kpi-label">Exposures</div><div id="exposures" class="kpi-value">—</div></div>
+        <div class="kpi"><div class="kpi-label">Conversions</div><div id="conversions" class="kpi-value">—</div></div>
+      </div>
+    </section>
+
+    <section id="periods" class="panel hidden">
+      <h2>Totals by Periods (Days)</h2>
+      <div class="table-wrap">
+        <table id="days-table"></table>
+      </div>
+    </section>
+
+    <section id="rows" class="panel hidden">
+      <h2>Rows</h2>
+      <div class="table-wrap">
+        <table id="rows-table"></table>
+      </div>
+    </section>
+  </div>
+
+  <script src="/script.js"></script>
+</body>
+</html>

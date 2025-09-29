@@ -1,0 +1,3542 @@
+{
+    "params": {
+        "aid": "N8sydUSDcX",
+        "experienceId": "EXCTYT87DM0F",
+        "dateTimeRange": {
+            "startDate": "2025-08-24",
+            "endDate": "2025-09-23",
+            "zone": "America/New_York",
+            "start": 1756008000.000000000,
+            "end": 1758686400.000000000,
+            "startUtc": 1756008000.000000000,
+            "endUtc": 1758686400.000000000
+        },
+        "dataset": {
+            "source": {
+                "id": "VX"
+            },
+            "category": null,
+            "id": "VX"
+        },
+        "rowLimit": 500,
+        "locale": "en_US"
+    },
+    "rootCardParams": {
+        "name": "Pages",
+        "moduleType": "effectivePages",
+        "affiliateProgram": null,
+        "allOf": true,
+        "excludeAuthors": [],
+        "excludeSections": [],
+        "excludeTags": [
+            "Promo Override",
+            "access-override",
+            "sponsored"
+        ],
+        "excludeUrlParameters": [],
+        "excludeUrls": [
+            "*://*_preview*",
+            "https://www.dig-in.com/news/gen-ai-makes-data-much-more-valuable-to-insurers?awardentry",
+            "https://www.dig-in.com/news/gen-ai-moves-from-potential-to-reality-for-insurers?awardentry",
+            "https://www.dig-in.com/news/insurers-find-many-risk-management-uses-for-gen-ai?awardentry"
+        ],
+        "excludeZones": [],
+        "externalSegment": {},
+        "id": "effectivePages9SLQDM8FLRPUSDZ",
+        "includeAuthors": [],
+        "includeSections": [],
+        "includeTags": [],
+        "includeUrlParameters": [],
+        "includeUrls": [
+            "*://*/articles/*",
+            "*://*/news/*",
+            "*://*/opinion/*"
+        ],
+        "includeZones": [],
+        "publishTime": {
+            "include": true,
+            "minimumAge": {
+                "timeUnit": "DAYS"
+            },
+            "maximumAge": {
+                "timeUnit": "DAYS"
+            }
+        },
+        "targetAllPages": false,
+        "useAndLogicForTags": false,
+        "nodeType": "effectivePages"
+    },
+    "conversions": 5,
+    "exposures": 57,
+    "totals": {
+        "conversions": 598,
+        "exposures": 8138,
+        "totalsBySource": {
+            "VX": 5,
+            "External": 0
+        },
+        "totalsByCategory": {
+            "ExternalLink": 246,
+            "Click": 347,
+            "Close": 219
+        }
+    },
+    "totalsByPeriods": {
+        "days": [
+            {
+                "date": "2025-08-24",
+                "exposures": 0,
+                "conversions": 0,
+                "conversionRate": null
+            },
+            {
+                "date": "2025-08-25",
+                "exposures": 8,
+                "conversions": 1,
+                "conversionRate": 0.125
+            },
+            {
+                "date": "2025-08-26",
+                "exposures": 6,
+                "conversions": 0,
+                "conversionRate": 0.0
+            },
+            {
+                "date": "2025-08-27",
+                "exposures": 0,
+                "conversions": 0,
+                "conversionRate": null
+            },
+            {
+                "date": "2025-08-28",
+                "exposures": 0,
+                "conversions": 0,
+                "conversionRate": null
+            },
+            {
+                "date": "2025-08-29",
+                "exposures": 0,
+                "conversions": 0,
+                "conversionRate": null
+            },
+            {
+                "date": "2025-08-30",
+                "exposures": 1,
+                "conversions": 0,
+                "conversionRate": 0.0
+            },
+            {
+                "date": "2025-08-31",
+                "exposures": 0,
+                "conversions": 0,
+                "conversionRate": null
+            },
+            {
+                "date": "2025-09-01",
+                "exposures": 0,
+                "conversions": 0,
+                "conversionRate": null
+            },
+            {
+                "date": "2025-09-02",
+                "exposures": 0,
+                "conversions": 0,
+                "conversionRate": null
+            },
+            {
+                "date": "2025-09-03",
+                "exposures": 0,
+                "conversions": 0,
+                "conversionRate": null
+            },
+            {
+                "date": "2025-09-04",
+                "exposures": 0,
+                "conversions": 0,
+                "conversionRate": null
+            },
+            {
+                "date": "2025-09-05",
+                "exposures": 0,
+                "conversions": 0,
+                "conversionRate": null
+            },
+            {
+                "date": "2025-09-06",
+                "exposures": 0,
+                "conversions": 0,
+                "conversionRate": null
+            },
+            {
+                "date": "2025-09-07",
+                "exposures": 0,
+                "conversions": 0,
+                "conversionRate": null
+            },
+            {
+                "date": "2025-09-08",
+                "exposures": 0,
+                "conversions": 0,
+                "conversionRate": null
+            },
+            {
+                "date": "2025-09-09",
+                "exposures": 0,
+                "conversions": 0,
+                "conversionRate": null
+            },
+            {
+                "date": "2025-09-10",
+                "exposures": 0,
+                "conversions": 0,
+                "conversionRate": null
+            },
+            {
+                "date": "2025-09-11",
+                "exposures": 2,
+                "conversions": 0,
+                "conversionRate": 0.0
+            },
+            {
+                "date": "2025-09-12",
+                "exposures": 6,
+                "conversions": 0,
+                "conversionRate": 0.0
+            },
+            {
+                "date": "2025-09-13",
+                "exposures": 2,
+                "conversions": 0,
+                "conversionRate": 0.0
+            },
+            {
+                "date": "2025-09-14",
+                "exposures": 2,
+                "conversions": 0,
+                "conversionRate": 0.0
+            },
+            {
+                "date": "2025-09-15",
+                "exposures": 8,
+                "conversions": 2,
+                "conversionRate": 0.25
+            },
+            {
+                "date": "2025-09-16",
+                "exposures": 3,
+                "conversions": 0,
+                "conversionRate": 0.0
+            },
+            {
+                "date": "2025-09-17",
+                "exposures": 4,
+                "conversions": 1,
+                "conversionRate": 0.25
+            },
+            {
+                "date": "2025-09-18",
+                "exposures": 3,
+                "conversions": 0,
+                "conversionRate": 0.0
+            },
+            {
+                "date": "2025-09-19",
+                "exposures": 1,
+                "conversions": 0,
+                "conversionRate": 0.0
+            },
+            {
+                "date": "2025-09-20",
+                "exposures": 3,
+                "conversions": 0,
+                "conversionRate": 0.0
+            },
+            {
+                "date": "2025-09-21",
+                "exposures": 0,
+                "conversions": 0,
+                "conversionRate": null
+            },
+            {
+                "date": "2025-09-22",
+                "exposures": 4,
+                "conversions": 0,
+                "conversionRate": 0.0
+            },
+            {
+                "date": "2025-09-23",
+                "exposures": 4,
+                "conversions": 1,
+                "conversionRate": 0.25
+            }
+        ],
+        "weeks": [
+            {
+                "date": "2025-08-24",
+                "exposures": 15,
+                "conversions": 1,
+                "conversionRate": 0.06666666666666667
+            },
+            {
+                "date": "2025-08-31",
+                "exposures": 0,
+                "conversions": 0,
+                "conversionRate": null
+            },
+            {
+                "date": "2025-09-07",
+                "exposures": 10,
+                "conversions": 0,
+                "conversionRate": 0.0
+            },
+            {
+                "date": "2025-09-14",
+                "exposures": 24,
+                "conversions": 3,
+                "conversionRate": 0.125
+            },
+            {
+                "date": "2025-09-21",
+                "exposures": 8,
+                "conversions": 1,
+                "conversionRate": 0.125
+            }
+        ],
+        "months": [
+            {
+                "date": "2025-08-01",
+                "exposures": 15,
+                "conversions": 1,
+                "conversionRate": 0.06666666666666667
+            },
+            {
+                "date": "2025-09-01",
+                "exposures": 42,
+                "conversions": 4,
+                "conversionRate": 0.09523809523809523
+            }
+        ],
+        "quarters": [
+            {
+                "date": "2025-07-01",
+                "exposures": 57,
+                "conversions": 5,
+                "conversionRate": 0.08771929824561403
+            }
+        ],
+        "years": [
+            {
+                "date": "2025-01-01",
+                "exposures": 57,
+                "conversions": 5,
+                "conversionRate": 0.08771929824561403
+            }
+        ]
+    },
+    "rows": [
+        {
+            "conversionSetMetadata": {
+                "category": {
+                    "id": "Click",
+                    "vxId": 1003,
+                    "interaction": true
+                },
+                "source": {
+                    "id": "Micro"
+                },
+                "offer": null,
+                "term": {
+                    "id": "#login",
+                    "name": "login",
+                    "link": null
+                },
+                "template": {
+                    "id": "OT5YLGNPQVL9",
+                    "variantId": null,
+                    "name": "Registration Gate - Default",
+                    "variantName": null
+                },
+                "actionCard": {
+                    "id": "showTemplate4G2B66YSER6J101",
+                    "name": "Show template"
+                },
+                "currency": "USD",
+                "splitTest": null,
+                "customName": null
+            },
+            "exposures": 754,
+            "conversions": 20,
+            "value": 0.0000,
+            "currency": "USD",
+            "changed": false,
+            "isCounted": true,
+            "conversionRate": 0.026525198938992044
+        },
+        {
+            "conversionSetMetadata": {
+                "category": {
+                    "id": "Click",
+                    "vxId": 1003,
+                    "interaction": true
+                },
+                "source": {
+                    "id": "Micro"
+                },
+                "offer": null,
+                "term": {
+                    "id": "#login",
+                    "name": "login",
+                    "link": null
+                },
+                "template": {
+                    "id": "OT5YLGNPQVL9",
+                    "variantId": null,
+                    "name": "Registration Gate - Default",
+                    "variantName": null
+                },
+                "actionCard": {
+                    "id": "showTemplateKE7SCAZBJCUF69",
+                    "name": "Control - Initial Registration"
+                },
+                "currency": "USD",
+                "splitTest": {
+                    "id": "splitTest66K5ELPGLI5N54",
+                    "branchId": "splitTestVariantEWN5OWK222Y956",
+                    "branchName": "Control",
+                    "label": -1,
+                    "type": "CONTROL"
+                },
+                "customName": null
+            },
+            "exposures": 2486,
+            "conversions": 49,
+            "value": 0.0000,
+            "currency": "USD",
+            "changed": false,
+            "isCounted": true,
+            "conversionRate": 0.019710378117457763
+        },
+        {
+            "conversionSetMetadata": {
+                "category": {
+                    "id": "Click",
+                    "vxId": 1003,
+                    "interaction": true
+                },
+                "source": {
+                    "id": "Micro"
+                },
+                "offer": null,
+                "term": {
+                    "id": "#login",
+                    "name": "login",
+                    "link": null
+                },
+                "template": {
+                    "id": "OT6N7G0IRXMB",
+                    "variantId": null,
+                    "name": "TEST INITIAL PAYWALL - Inline - Paywall Gate",
+                    "variantName": null
+                },
+                "actionCard": {
+                    "id": "showTemplateUH9NW8KHKAWV107",
+                    "name": "Test - Initial Paywall"
+                },
+                "currency": "USD",
+                "splitTest": {
+                    "id": "splitTest66K5ELPGLI5N54",
+                    "branchId": "splitTestVariantWCZ93A2EZED657",
+                    "branchName": "Paywall Test",
+                    "label": 0,
+                    "type": "NORMAL"
+                },
+                "customName": null
+            },
+            "exposures": 2093,
+            "conversions": 49,
+            "value": 0.0000,
+            "currency": "USD",
+            "changed": false,
+            "isCounted": true,
+            "conversionRate": 0.023411371237458192
+        },
+        {
+            "conversionSetMetadata": {
+                "category": {
+                    "id": "Click",
+                    "vxId": 1003,
+                    "interaction": true
+                },
+                "source": {
+                    "id": "Micro"
+                },
+                "offer": null,
+                "term": {
+                    "id": "#login",
+                    "name": "login",
+                    "link": null
+                },
+                "template": {
+                    "id": "OTL0NW1XM8EW",
+                    "variantId": null,
+                    "name": "Inline - Paywall Gate",
+                    "variantName": null
+                },
+                "actionCard": {
+                    "id": "showTemplate1EP8GN2FAXL259",
+                    "name": "Google Bing Cookie Paywall"
+                },
+                "currency": "USD",
+                "splitTest": null,
+                "customName": null
+            },
+            "exposures": 443,
+            "conversions": 10,
+            "value": 0.0000,
+            "currency": "USD",
+            "changed": false,
+            "isCounted": true,
+            "conversionRate": 0.022573363431151242
+        },
+        {
+            "conversionSetMetadata": {
+                "category": {
+                    "id": "Click",
+                    "vxId": 1003,
+                    "interaction": true
+                },
+                "source": {
+                    "id": "Micro"
+                },
+                "offer": null,
+                "term": {
+                    "id": "#login",
+                    "name": "login",
+                    "link": null
+                },
+                "template": {
+                    "id": "OTL0NW1XM8EW",
+                    "variantId": null,
+                    "name": "Inline - Paywall Gate",
+                    "variantName": null
+                },
+                "actionCard": {
+                    "id": "showTemplateFIDY87YIKSDB61",
+                    "name": "Google Bing Initial Paywall"
+                },
+                "currency": "USD",
+                "splitTest": null,
+                "customName": null
+            },
+            "exposures": 969,
+            "conversions": 15,
+            "value": 0.0000,
+            "currency": "USD",
+            "changed": false,
+            "isCounted": true,
+            "conversionRate": 0.015479876160990712
+        },
+        {
+            "conversionSetMetadata": {
+                "category": {
+                    "id": "Click",
+                    "vxId": 1003,
+                    "interaction": true
+                },
+                "source": {
+                    "id": "Micro"
+                },
+                "offer": null,
+                "term": {
+                    "id": "#login",
+                    "name": "login",
+                    "link": null
+                },
+                "template": {
+                    "id": "OTL0NW1XM8EW",
+                    "variantId": null,
+                    "name": "Inline - Paywall Gate",
+                    "variantName": null
+                },
+                "actionCard": {
+                    "id": "showTemplateUH9NW8KHKAWV107",
+                    "name": "Test - Initial Paywall"
+                },
+                "currency": "USD",
+                "splitTest": {
+                    "id": "splitTest66K5ELPGLI5N54",
+                    "branchId": "splitTestVariantWCZ93A2EZED657",
+                    "branchName": "Paywall Test",
+                    "label": 0,
+                    "type": "NORMAL"
+                },
+                "customName": null
+            },
+            "exposures": 325,
+            "conversions": 10,
+            "value": 0.0000,
+            "currency": "USD",
+            "changed": false,
+            "isCounted": true,
+            "conversionRate": 0.03076923076923077
+        },
+        {
+            "conversionSetMetadata": {
+                "category": {
+                    "id": "Click",
+                    "vxId": 1003,
+                    "interaction": true
+                },
+                "source": {
+                    "id": "Micro"
+                },
+                "offer": null,
+                "term": {
+                    "id": "#logoTextLink",
+                    "name": "logoTextLink",
+                    "link": null
+                },
+                "template": {
+                    "id": "OT169ICM54NX",
+                    "variantId": null,
+                    "name": "TEST DOWNSTREAM PAYWALL - Inline - Paywall Gate",
+                    "variantName": null
+                },
+                "actionCard": {
+                    "id": "showTemplateL3CBCK4KNBCG57",
+                    "name": "TEST Downstream Paywall"
+                },
+                "currency": "USD",
+                "splitTest": null,
+                "customName": null
+            },
+            "exposures": 86,
+            "conversions": 1,
+            "value": 0.0000,
+            "currency": "USD",
+            "changed": false,
+            "isCounted": true,
+            "conversionRate": 0.011627906976744186
+        },
+        {
+            "conversionSetMetadata": {
+                "category": {
+                    "id": "Click",
+                    "vxId": 1003,
+                    "interaction": true
+                },
+                "source": {
+                    "id": "Micro"
+                },
+                "offer": null,
+                "term": {
+                    "id": "#logoTextLink",
+                    "name": "logoTextLink",
+                    "link": null
+                },
+                "template": {
+                    "id": "OTL0NW1XM8EW",
+                    "variantId": null,
+                    "name": "Inline - Paywall Gate",
+                    "variantName": null
+                },
+                "actionCard": {
+                    "id": "showTemplateL3CBCK4KNBCG57",
+                    "name": "TEST Downstream Paywall"
+                },
+                "currency": "USD",
+                "splitTest": null,
+                "customName": null
+            },
+            "exposures": 153,
+            "conversions": 1,
+            "value": 0.0000,
+            "currency": "USD",
+            "changed": false,
+            "isCounted": true,
+            "conversionRate": 0.006535947712418301
+        },
+        {
+            "conversionSetMetadata": {
+                "category": {
+                    "id": "Click",
+                    "vxId": 1003,
+                    "interaction": true
+                },
+                "source": {
+                    "id": "Micro"
+                },
+                "offer": null,
+                "term": {
+                    "id": "#logoTextLink",
+                    "name": "logoTextLink",
+                    "link": null
+                },
+                "template": {
+                    "id": "OTL0NW1XM8EW",
+                    "variantId": null,
+                    "name": "Inline - Paywall Gate",
+                    "variantName": null
+                },
+                "actionCard": {
+                    "id": "showTemplateLXIBIG7IWELS31",
+                    "name": "Downstream Paywall"
+                },
+                "currency": "USD",
+                "splitTest": null,
+                "customName": null
+            },
+            "exposures": 233,
+            "conversions": 1,
+            "value": 0.0000,
+            "currency": "USD",
+            "changed": false,
+            "isCounted": true,
+            "conversionRate": 0.004291845493562232
+        },
+        {
+            "conversionSetMetadata": {
+                "category": {
+                    "id": "Click",
+                    "vxId": 1003,
+                    "interaction": true
+                },
+                "source": {
+                    "id": "Micro"
+                },
+                "offer": null,
+                "term": {
+                    "id": "#premium-annual-member-clicked",
+                    "name": "premium-annual-member-clicked",
+                    "link": null
+                },
+                "template": {
+                    "id": "OT169ICM54NX",
+                    "variantId": null,
+                    "name": "TEST DOWNSTREAM PAYWALL - Inline - Paywall Gate",
+                    "variantName": null
+                },
+                "actionCard": {
+                    "id": "showTemplateL3CBCK4KNBCG57",
+                    "name": "TEST Downstream Paywall"
+                },
+                "currency": "USD",
+                "splitTest": null,
+                "customName": null
+            },
+            "exposures": 86,
+            "conversions": 1,
+            "value": 0.0000,
+            "currency": "USD",
+            "changed": false,
+            "isCounted": true,
+            "conversionRate": 0.011627906976744186
+        },
+        {
+            "conversionSetMetadata": {
+                "category": {
+                    "id": "Click",
+                    "vxId": 1003,
+                    "interaction": true
+                },
+                "source": {
+                    "id": "Micro"
+                },
+                "offer": null,
+                "term": {
+                    "id": "#premium-annual-member-clicked",
+                    "name": "premium-annual-member-clicked",
+                    "link": null
+                },
+                "template": {
+                    "id": "OT5YLGNPQVL9",
+                    "variantId": null,
+                    "name": "Registration Gate - Default",
+                    "variantName": null
+                },
+                "actionCard": {
+                    "id": "showTemplateKE7SCAZBJCUF69",
+                    "name": "Control - Initial Registration"
+                },
+                "currency": "USD",
+                "splitTest": {
+                    "id": "splitTest66K5ELPGLI5N54",
+                    "branchId": "splitTestVariantEWN5OWK222Y956",
+                    "branchName": "Control",
+                    "label": -1,
+                    "type": "CONTROL"
+                },
+                "customName": null
+            },
+            "exposures": 2486,
+            "conversions": 2,
+            "value": 0.0000,
+            "currency": "USD",
+            "changed": false,
+            "isCounted": true,
+            "conversionRate": 8.045052292839903E-4
+        },
+        {
+            "conversionSetMetadata": {
+                "category": {
+                    "id": "Click",
+                    "vxId": 1003,
+                    "interaction": true
+                },
+                "source": {
+                    "id": "Micro"
+                },
+                "offer": null,
+                "term": {
+                    "id": "#premium-annual-member-clicked",
+                    "name": "premium-annual-member-clicked",
+                    "link": null
+                },
+                "template": {
+                    "id": "OT6N7G0IRXMB",
+                    "variantId": null,
+                    "name": "TEST INITIAL PAYWALL - Inline - Paywall Gate",
+                    "variantName": null
+                },
+                "actionCard": {
+                    "id": "showTemplateUH9NW8KHKAWV107",
+                    "name": "Test - Initial Paywall"
+                },
+                "currency": "USD",
+                "splitTest": {
+                    "id": "splitTest66K5ELPGLI5N54",
+                    "branchId": "splitTestVariantWCZ93A2EZED657",
+                    "branchName": "Paywall Test",
+                    "label": 0,
+                    "type": "NORMAL"
+                },
+                "customName": null
+            },
+            "exposures": 2093,
+            "conversions": 1,
+            "value": 0.0000,
+            "currency": "USD",
+            "changed": false,
+            "isCounted": true,
+            "conversionRate": 4.7778308647873863E-4
+        },
+        {
+            "conversionSetMetadata": {
+                "category": {
+                    "id": "Click",
+                    "vxId": 1003,
+                    "interaction": true
+                },
+                "source": {
+                    "id": "Micro"
+                },
+                "offer": null,
+                "term": {
+                    "id": "#premium-annual-member-clicked",
+                    "name": "premium-annual-member-clicked",
+                    "link": null
+                },
+                "template": {
+                    "id": "OTL0NW1XM8EW",
+                    "variantId": null,
+                    "name": "Inline - Paywall Gate",
+                    "variantName": null
+                },
+                "actionCard": {
+                    "id": "showTemplate1EP8GN2FAXL259",
+                    "name": "Google Bing Cookie Paywall"
+                },
+                "currency": "USD",
+                "splitTest": null,
+                "customName": null
+            },
+            "exposures": 443,
+            "conversions": 1,
+            "value": 0.0000,
+            "currency": "USD",
+            "changed": false,
+            "isCounted": true,
+            "conversionRate": 0.002257336343115124
+        },
+        {
+            "conversionSetMetadata": {
+                "category": {
+                    "id": "Click",
+                    "vxId": 1003,
+                    "interaction": true
+                },
+                "source": {
+                    "id": "Micro"
+                },
+                "offer": null,
+                "term": {
+                    "id": "#premium-annual-member-clicked",
+                    "name": "premium-annual-member-clicked",
+                    "link": null
+                },
+                "template": {
+                    "id": "OTL0NW1XM8EW",
+                    "variantId": null,
+                    "name": "Inline - Paywall Gate",
+                    "variantName": null
+                },
+                "actionCard": {
+                    "id": "showTemplateL3CBCK4KNBCG57",
+                    "name": "TEST Downstream Paywall"
+                },
+                "currency": "USD",
+                "splitTest": null,
+                "customName": null
+            },
+            "exposures": 153,
+            "conversions": 1,
+            "value": 0.0000,
+            "currency": "USD",
+            "changed": false,
+            "isCounted": true,
+            "conversionRate": 0.006535947712418301
+        },
+        {
+            "conversionSetMetadata": {
+                "category": {
+                    "id": "Click",
+                    "vxId": 1003,
+                    "interaction": true
+                },
+                "source": {
+                    "id": "Micro"
+                },
+                "offer": null,
+                "term": {
+                    "id": "#premium-annual-member-clicked",
+                    "name": "premium-annual-member-clicked",
+                    "link": null
+                },
+                "template": {
+                    "id": "OTL0NW1XM8EW",
+                    "variantId": null,
+                    "name": "Inline - Paywall Gate",
+                    "variantName": null
+                },
+                "actionCard": {
+                    "id": "showTemplateLXIBIG7IWELS31",
+                    "name": "Downstream Paywall"
+                },
+                "currency": "USD",
+                "splitTest": null,
+                "customName": null
+            },
+            "exposures": 233,
+            "conversions": 2,
+            "value": 0.0000,
+            "currency": "USD",
+            "changed": false,
+            "isCounted": true,
+            "conversionRate": 0.008583690987124463
+        },
+        {
+            "conversionSetMetadata": {
+                "category": {
+                    "id": "Click",
+                    "vxId": 1003,
+                    "interaction": true
+                },
+                "source": {
+                    "id": "Micro"
+                },
+                "offer": null,
+                "term": {
+                    "id": "#premium-monthly-member-clicked",
+                    "name": "premium-monthly-member-clicked",
+                    "link": null
+                },
+                "template": {
+                    "id": "OT6N7G0IRXMB",
+                    "variantId": null,
+                    "name": "TEST INITIAL PAYWALL - Inline - Paywall Gate",
+                    "variantName": null
+                },
+                "actionCard": {
+                    "id": "showTemplateUH9NW8KHKAWV107",
+                    "name": "Test - Initial Paywall"
+                },
+                "currency": "USD",
+                "splitTest": {
+                    "id": "splitTest66K5ELPGLI5N54",
+                    "branchId": "splitTestVariantWCZ93A2EZED657",
+                    "branchName": "Paywall Test",
+                    "label": 0,
+                    "type": "NORMAL"
+                },
+                "customName": null
+            },
+            "exposures": 2093,
+            "conversions": 1,
+            "value": 0.0000,
+            "currency": "USD",
+            "changed": false,
+            "isCounted": true,
+            "conversionRate": 4.7778308647873863E-4
+        },
+        {
+            "conversionSetMetadata": {
+                "category": {
+                    "id": "Click",
+                    "vxId": 1003,
+                    "interaction": true
+                },
+                "source": {
+                    "id": "Micro"
+                },
+                "offer": null,
+                "term": {
+                    "id": "#premium-monthly-member-clicked",
+                    "name": "premium-monthly-member-clicked",
+                    "link": null
+                },
+                "template": {
+                    "id": "OTL0NW1XM8EW",
+                    "variantId": null,
+                    "name": "Inline - Paywall Gate",
+                    "variantName": null
+                },
+                "actionCard": {
+                    "id": "showTemplate1EP8GN2FAXL259",
+                    "name": "Google Bing Cookie Paywall"
+                },
+                "currency": "USD",
+                "splitTest": null,
+                "customName": null
+            },
+            "exposures": 443,
+            "conversions": 2,
+            "value": 0.0000,
+            "currency": "USD",
+            "changed": false,
+            "isCounted": true,
+            "conversionRate": 0.004514672686230248
+        },
+        {
+            "conversionSetMetadata": {
+                "category": {
+                    "id": "Click",
+                    "vxId": 1003,
+                    "interaction": true
+                },
+                "source": {
+                    "id": "Micro"
+                },
+                "offer": null,
+                "term": {
+                    "id": "#premium-monthly-member-clicked",
+                    "name": "premium-monthly-member-clicked",
+                    "link": null
+                },
+                "template": {
+                    "id": "OTL0NW1XM8EW",
+                    "variantId": null,
+                    "name": "Inline - Paywall Gate",
+                    "variantName": null
+                },
+                "actionCard": {
+                    "id": "showTemplateLXIBIG7IWELS31",
+                    "name": "Downstream Paywall"
+                },
+                "currency": "USD",
+                "splitTest": null,
+                "customName": null
+            },
+            "exposures": 233,
+            "conversions": 1,
+            "value": 0.0000,
+            "currency": "USD",
+            "changed": false,
+            "isCounted": true,
+            "conversionRate": 0.004291845493562232
+        },
+        {
+            "conversionSetMetadata": {
+                "category": {
+                    "id": "Click",
+                    "vxId": 1003,
+                    "interaction": true
+                },
+                "source": {
+                    "id": "Micro"
+                },
+                "offer": null,
+                "term": {
+                    "id": "#register",
+                    "name": "register",
+                    "link": null
+                },
+                "template": {
+                    "id": "OT5YLGNPQVL9",
+                    "variantId": null,
+                    "name": "Registration Gate - Default",
+                    "variantName": null
+                },
+                "actionCard": {
+                    "id": "showTemplate4G2B66YSER6J101",
+                    "name": "Show template"
+                },
+                "currency": "USD",
+                "splitTest": null,
+                "customName": null
+            },
+            "exposures": 754,
+            "conversions": 60,
+            "value": 0.0000,
+            "currency": "USD",
+            "changed": false,
+            "isCounted": true,
+            "conversionRate": 0.07957559681697612
+        },
+        {
+            "conversionSetMetadata": {
+                "category": {
+                    "id": "Click",
+                    "vxId": 1003,
+                    "interaction": true
+                },
+                "source": {
+                    "id": "Micro"
+                },
+                "offer": null,
+                "term": {
+                    "id": "#register",
+                    "name": "register",
+                    "link": null
+                },
+                "template": {
+                    "id": "OT5YLGNPQVL9",
+                    "variantId": null,
+                    "name": "Registration Gate - Default",
+                    "variantName": null
+                },
+                "actionCard": {
+                    "id": "showTemplateKE7SCAZBJCUF69",
+                    "name": "Control - Initial Registration"
+                },
+                "currency": "USD",
+                "splitTest": {
+                    "id": "splitTest66K5ELPGLI5N54",
+                    "branchId": "splitTestVariantEWN5OWK222Y956",
+                    "branchName": "Control",
+                    "label": -1,
+                    "type": "CONTROL"
+                },
+                "customName": null
+            },
+            "exposures": 2486,
+            "conversions": 110,
+            "value": 0.0000,
+            "currency": "USD",
+            "changed": false,
+            "isCounted": true,
+            "conversionRate": 0.04424778761061947
+        },
+        {
+            "conversionSetMetadata": {
+                "category": {
+                    "id": "Click",
+                    "vxId": 1003,
+                    "interaction": true
+                },
+                "source": {
+                    "id": "Micro"
+                },
+                "offer": null,
+                "term": {
+                    "id": "#register",
+                    "name": "register",
+                    "link": null
+                },
+                "template": {
+                    "id": "OT8IHRWSKJN6",
+                    "variantId": null,
+                    "name": "Exit Intent Modal - Register",
+                    "variantName": null
+                },
+                "actionCard": {
+                    "id": "showTemplateSTGEP05EJ86D168",
+                    "name": "Test - Exit Intent Register Modal"
+                },
+                "currency": "USD",
+                "splitTest": {
+                    "id": "splitTest66K5ELPGLI5N54",
+                    "branchId": "splitTestVariantWCZ93A2EZED657",
+                    "branchName": "Paywall Test",
+                    "label": 0,
+                    "type": "NORMAL"
+                },
+                "customName": null
+            },
+            "exposures": 539,
+            "conversions": 14,
+            "value": 0.0000,
+            "currency": "USD",
+            "changed": false,
+            "isCounted": true,
+            "conversionRate": 0.025974025974025976
+        },
+        {
+            "conversionSetMetadata": {
+                "category": {
+                    "id": "Close",
+                    "vxId": 1004,
+                    "interaction": true
+                },
+                "source": {
+                    "id": "Micro"
+                },
+                "offer": null,
+                "term": {
+                    "id": "#close",
+                    "name": "close",
+                    "link": null
+                },
+                "template": {
+                    "id": "OT169ICM54NX",
+                    "variantId": null,
+                    "name": "TEST DOWNSTREAM PAYWALL - Inline - Paywall Gate",
+                    "variantName": null
+                },
+                "actionCard": {
+                    "id": "showTemplateL3CBCK4KNBCG57",
+                    "name": "TEST Downstream Paywall"
+                },
+                "currency": "USD",
+                "splitTest": null,
+                "customName": null
+            },
+            "exposures": 86,
+            "conversions": 1,
+            "value": 0.0000,
+            "currency": "USD",
+            "changed": false,
+            "isCounted": true,
+            "conversionRate": 0.011627906976744186
+        },
+        {
+            "conversionSetMetadata": {
+                "category": {
+                    "id": "Close",
+                    "vxId": 1004,
+                    "interaction": true
+                },
+                "source": {
+                    "id": "Micro"
+                },
+                "offer": null,
+                "term": {
+                    "id": "#close",
+                    "name": "close",
+                    "link": null
+                },
+                "template": {
+                    "id": "OT6N7G0IRXMB",
+                    "variantId": null,
+                    "name": "TEST INITIAL PAYWALL - Inline - Paywall Gate",
+                    "variantName": null
+                },
+                "actionCard": {
+                    "id": "showTemplateUH9NW8KHKAWV107",
+                    "name": "Test - Initial Paywall"
+                },
+                "currency": "USD",
+                "splitTest": {
+                    "id": "splitTest66K5ELPGLI5N54",
+                    "branchId": "splitTestVariantWCZ93A2EZED657",
+                    "branchName": "Paywall Test",
+                    "label": 0,
+                    "type": "NORMAL"
+                },
+                "customName": null
+            },
+            "exposures": 2093,
+            "conversions": 2,
+            "value": 0.0000,
+            "currency": "USD",
+            "changed": false,
+            "isCounted": true,
+            "conversionRate": 9.555661729574773E-4
+        },
+        {
+            "conversionSetMetadata": {
+                "category": {
+                    "id": "Close",
+                    "vxId": 1004,
+                    "interaction": true
+                },
+                "source": {
+                    "id": "Micro"
+                },
+                "offer": null,
+                "term": {
+                    "id": "#close",
+                    "name": "close",
+                    "link": null
+                },
+                "template": {
+                    "id": "OT8IHRWSKJN6",
+                    "variantId": null,
+                    "name": "Exit Intent Modal - Register",
+                    "variantName": null
+                },
+                "actionCard": {
+                    "id": "showTemplateSTGEP05EJ86D168",
+                    "name": "Test - Exit Intent Register Modal"
+                },
+                "currency": "USD",
+                "splitTest": {
+                    "id": "splitTest66K5ELPGLI5N54",
+                    "branchId": "splitTestVariantWCZ93A2EZED657",
+                    "branchName": "Paywall Test",
+                    "label": 0,
+                    "type": "NORMAL"
+                },
+                "customName": null
+            },
+            "exposures": 539,
+            "conversions": 212,
+            "value": 0.0000,
+            "currency": "USD",
+            "changed": false,
+            "isCounted": true,
+            "conversionRate": 0.39332096474953615
+        },
+        {
+            "conversionSetMetadata": {
+                "category": {
+                    "id": "Close",
+                    "vxId": 1004,
+                    "interaction": true
+                },
+                "source": {
+                    "id": "Micro"
+                },
+                "offer": null,
+                "term": {
+                    "id": "#close",
+                    "name": "close",
+                    "link": null
+                },
+                "template": {
+                    "id": "OTL0NW1XM8EW",
+                    "variantId": null,
+                    "name": "Inline - Paywall Gate",
+                    "variantName": null
+                },
+                "actionCard": {
+                    "id": "showTemplate1EP8GN2FAXL259",
+                    "name": "Google Bing Cookie Paywall"
+                },
+                "currency": "USD",
+                "splitTest": null,
+                "customName": null
+            },
+            "exposures": 443,
+            "conversions": 3,
+            "value": 0.0000,
+            "currency": "USD",
+            "changed": false,
+            "isCounted": true,
+            "conversionRate": 0.006772009029345372
+        },
+        {
+            "conversionSetMetadata": {
+                "category": {
+                    "id": "Close",
+                    "vxId": 1004,
+                    "interaction": true
+                },
+                "source": {
+                    "id": "Micro"
+                },
+                "offer": null,
+                "term": {
+                    "id": "#close",
+                    "name": "close",
+                    "link": null
+                },
+                "template": {
+                    "id": "OTL0NW1XM8EW",
+                    "variantId": null,
+                    "name": "Inline - Paywall Gate",
+                    "variantName": null
+                },
+                "actionCard": {
+                    "id": "showTemplateLXIBIG7IWELS31",
+                    "name": "Downstream Paywall"
+                },
+                "currency": "USD",
+                "splitTest": null,
+                "customName": null
+            },
+            "exposures": 233,
+            "conversions": 1,
+            "value": 0.0000,
+            "currency": "USD",
+            "changed": false,
+            "isCounted": true,
+            "conversionRate": 0.004291845493562232
+        },
+        {
+            "conversionSetMetadata": {
+                "category": {
+                    "id": "ExternalLink",
+                    "vxId": 101,
+                    "interaction": true
+                },
+                "source": {
+                    "id": "Micro"
+                },
+                "offer": null,
+                "term": {
+                    "id": "#https://www.dig-in.com",
+                    "name": "https://www.dig-in.com",
+                    "link": null
+                },
+                "template": {
+                    "id": "OT169ICM54NX",
+                    "variantId": null,
+                    "name": "TEST DOWNSTREAM PAYWALL - Inline - Paywall Gate",
+                    "variantName": null
+                },
+                "actionCard": {
+                    "id": "showTemplateL3CBCK4KNBCG57",
+                    "name": "TEST Downstream Paywall"
+                },
+                "currency": "USD",
+                "splitTest": null,
+                "customName": null
+            },
+            "exposures": 86,
+            "conversions": 1,
+            "value": 0.0000,
+            "currency": "USD",
+            "changed": false,
+            "isCounted": true,
+            "conversionRate": 0.011627906976744186
+        },
+        {
+            "conversionSetMetadata": {
+                "category": {
+                    "id": "ExternalLink",
+                    "vxId": 101,
+                    "interaction": true
+                },
+                "source": {
+                    "id": "Micro"
+                },
+                "offer": null,
+                "term": {
+                    "id": "#https://www.dig-in.com",
+                    "name": "https://www.dig-in.com",
+                    "link": null
+                },
+                "template": {
+                    "id": "OT5YLGNPQVL9",
+                    "variantId": null,
+                    "name": "Registration Gate - Default",
+                    "variantName": null
+                },
+                "actionCard": {
+                    "id": "showTemplateKE7SCAZBJCUF69",
+                    "name": "Control - Initial Registration"
+                },
+                "currency": "USD",
+                "splitTest": {
+                    "id": "splitTest66K5ELPGLI5N54",
+                    "branchId": "splitTestVariantEWN5OWK222Y956",
+                    "branchName": "Control",
+                    "label": -1,
+                    "type": "CONTROL"
+                },
+                "customName": null
+            },
+            "exposures": 2486,
+            "conversions": 1,
+            "value": 0.0000,
+            "currency": "USD",
+            "changed": false,
+            "isCounted": true,
+            "conversionRate": 4.0225261464199515E-4
+        },
+        {
+            "conversionSetMetadata": {
+                "category": {
+                    "id": "ExternalLink",
+                    "vxId": 101,
+                    "interaction": true
+                },
+                "source": {
+                    "id": "Micro"
+                },
+                "offer": null,
+                "term": {
+                    "id": "#https://www.dig-in.com",
+                    "name": "https://www.dig-in.com",
+                    "link": null
+                },
+                "template": {
+                    "id": "OTL0NW1XM8EW",
+                    "variantId": null,
+                    "name": "Inline - Paywall Gate",
+                    "variantName": null
+                },
+                "actionCard": {
+                    "id": "showTemplateL3CBCK4KNBCG57",
+                    "name": "TEST Downstream Paywall"
+                },
+                "currency": "USD",
+                "splitTest": null,
+                "customName": null
+            },
+            "exposures": 153,
+            "conversions": 1,
+            "value": 0.0000,
+            "currency": "USD",
+            "changed": false,
+            "isCounted": true,
+            "conversionRate": 0.006535947712418301
+        },
+        {
+            "conversionSetMetadata": {
+                "category": {
+                    "id": "ExternalLink",
+                    "vxId": 101,
+                    "interaction": true
+                },
+                "source": {
+                    "id": "Micro"
+                },
+                "offer": null,
+                "term": {
+                    "id": "#https://www.dig-in.com",
+                    "name": "https://www.dig-in.com",
+                    "link": null
+                },
+                "template": {
+                    "id": "OTL0NW1XM8EW",
+                    "variantId": null,
+                    "name": "Inline - Paywall Gate",
+                    "variantName": null
+                },
+                "actionCard": {
+                    "id": "showTemplateLXIBIG7IWELS31",
+                    "name": "Downstream Paywall"
+                },
+                "currency": "USD",
+                "splitTest": null,
+                "customName": null
+            },
+            "exposures": 233,
+            "conversions": 1,
+            "value": 0.0000,
+            "currency": "USD",
+            "changed": false,
+            "isCounted": true,
+            "conversionRate": 0.004291845493562232
+        },
+        {
+            "conversionSetMetadata": {
+                "category": {
+                    "id": "ExternalLink",
+                    "vxId": 101,
+                    "interaction": true
+                },
+                "source": {
+                    "id": "Micro"
+                },
+                "offer": null,
+                "term": {
+                    "id": "#https://www.dig-in.com/subscribe",
+                    "name": "https://www.dig-in.com/subscribe",
+                    "link": null
+                },
+                "template": {
+                    "id": "OT169ICM54NX",
+                    "variantId": null,
+                    "name": "TEST DOWNSTREAM PAYWALL - Inline - Paywall Gate",
+                    "variantName": null
+                },
+                "actionCard": {
+                    "id": "showTemplateL3CBCK4KNBCG57",
+                    "name": "TEST Downstream Paywall"
+                },
+                "currency": "USD",
+                "splitTest": null,
+                "customName": null
+            },
+            "exposures": 86,
+            "conversions": 5,
+            "value": 0.0000,
+            "currency": "USD",
+            "changed": false,
+            "isCounted": true,
+            "conversionRate": 0.05813953488372093
+        },
+        {
+            "conversionSetMetadata": {
+                "category": {
+                    "id": "ExternalLink",
+                    "vxId": 101,
+                    "interaction": true
+                },
+                "source": {
+                    "id": "Micro"
+                },
+                "offer": null,
+                "term": {
+                    "id": "#https://www.dig-in.com/subscribe",
+                    "name": "https://www.dig-in.com/subscribe",
+                    "link": null
+                },
+                "template": {
+                    "id": "OT5YLGNPQVL9",
+                    "variantId": null,
+                    "name": "Registration Gate - Default",
+                    "variantName": null
+                },
+                "actionCard": {
+                    "id": "showTemplate4G2B66YSER6J101",
+                    "name": "Show template"
+                },
+                "currency": "USD",
+                "splitTest": null,
+                "customName": null
+            },
+            "exposures": 754,
+            "conversions": 42,
+            "value": 0.0000,
+            "currency": "USD",
+            "changed": false,
+            "isCounted": true,
+            "conversionRate": 0.05570291777188329
+        },
+        {
+            "conversionSetMetadata": {
+                "category": {
+                    "id": "ExternalLink",
+                    "vxId": 101,
+                    "interaction": true
+                },
+                "source": {
+                    "id": "Micro"
+                },
+                "offer": null,
+                "term": {
+                    "id": "#https://www.dig-in.com/subscribe",
+                    "name": "https://www.dig-in.com/subscribe",
+                    "link": null
+                },
+                "template": {
+                    "id": "OT5YLGNPQVL9",
+                    "variantId": null,
+                    "name": "Registration Gate - Default",
+                    "variantName": null
+                },
+                "actionCard": {
+                    "id": "showTemplateKE7SCAZBJCUF69",
+                    "name": "Control - Initial Registration"
+                },
+                "currency": "USD",
+                "splitTest": {
+                    "id": "splitTest66K5ELPGLI5N54",
+                    "branchId": "splitTestVariantEWN5OWK222Y956",
+                    "branchName": "Control",
+                    "label": -1,
+                    "type": "CONTROL"
+                },
+                "customName": null
+            },
+            "exposures": 2486,
+            "conversions": 96,
+            "value": 0.0000,
+            "currency": "USD",
+            "changed": false,
+            "isCounted": true,
+            "conversionRate": 0.038616251005631534
+        },
+        {
+            "conversionSetMetadata": {
+                "category": {
+                    "id": "ExternalLink",
+                    "vxId": 101,
+                    "interaction": true
+                },
+                "source": {
+                    "id": "Micro"
+                },
+                "offer": null,
+                "term": {
+                    "id": "#https://www.dig-in.com/subscribe",
+                    "name": "https://www.dig-in.com/subscribe",
+                    "link": null
+                },
+                "template": {
+                    "id": "OT6N7G0IRXMB",
+                    "variantId": null,
+                    "name": "TEST INITIAL PAYWALL - Inline - Paywall Gate",
+                    "variantName": null
+                },
+                "actionCard": {
+                    "id": "showTemplateUH9NW8KHKAWV107",
+                    "name": "Test - Initial Paywall"
+                },
+                "currency": "USD",
+                "splitTest": {
+                    "id": "splitTest66K5ELPGLI5N54",
+                    "branchId": "splitTestVariantWCZ93A2EZED657",
+                    "branchName": "Paywall Test",
+                    "label": 0,
+                    "type": "NORMAL"
+                },
+                "customName": null
+            },
+            "exposures": 2093,
+            "conversions": 64,
+            "value": 0.0000,
+            "currency": "USD",
+            "changed": false,
+            "isCounted": true,
+            "conversionRate": 0.030578117534639272
+        },
+        {
+            "conversionSetMetadata": {
+                "category": {
+                    "id": "ExternalLink",
+                    "vxId": 101,
+                    "interaction": true
+                },
+                "source": {
+                    "id": "Micro"
+                },
+                "offer": null,
+                "term": {
+                    "id": "#https://www.dig-in.com/subscribe",
+                    "name": "https://www.dig-in.com/subscribe",
+                    "link": null
+                },
+                "template": {
+                    "id": "OTL0NW1XM8EW",
+                    "variantId": null,
+                    "name": "Inline - Paywall Gate",
+                    "variantName": null
+                },
+                "actionCard": {
+                    "id": "showTemplate1EP8GN2FAXL259",
+                    "name": "Google Bing Cookie Paywall"
+                },
+                "currency": "USD",
+                "splitTest": null,
+                "customName": null
+            },
+            "exposures": 443,
+            "conversions": 8,
+            "value": 0.0000,
+            "currency": "USD",
+            "changed": false,
+            "isCounted": true,
+            "conversionRate": 0.01805869074492099
+        },
+        {
+            "conversionSetMetadata": {
+                "category": {
+                    "id": "ExternalLink",
+                    "vxId": 101,
+                    "interaction": true
+                },
+                "source": {
+                    "id": "Micro"
+                },
+                "offer": null,
+                "term": {
+                    "id": "#https://www.dig-in.com/subscribe",
+                    "name": "https://www.dig-in.com/subscribe",
+                    "link": null
+                },
+                "template": {
+                    "id": "OTL0NW1XM8EW",
+                    "variantId": null,
+                    "name": "Inline - Paywall Gate",
+                    "variantName": null
+                },
+                "actionCard": {
+                    "id": "showTemplateFIDY87YIKSDB61",
+                    "name": "Google Bing Initial Paywall"
+                },
+                "currency": "USD",
+                "splitTest": null,
+                "customName": null
+            },
+            "exposures": 969,
+            "conversions": 2,
+            "value": 0.0000,
+            "currency": "USD",
+            "changed": false,
+            "isCounted": true,
+            "conversionRate": 0.0020639834881320948
+        },
+        {
+            "conversionSetMetadata": {
+                "category": {
+                    "id": "ExternalLink",
+                    "vxId": 101,
+                    "interaction": true
+                },
+                "source": {
+                    "id": "Micro"
+                },
+                "offer": null,
+                "term": {
+                    "id": "#https://www.dig-in.com/subscribe",
+                    "name": "https://www.dig-in.com/subscribe",
+                    "link": null
+                },
+                "template": {
+                    "id": "OTL0NW1XM8EW",
+                    "variantId": null,
+                    "name": "Inline - Paywall Gate",
+                    "variantName": null
+                },
+                "actionCard": {
+                    "id": "showTemplateL3CBCK4KNBCG57",
+                    "name": "TEST Downstream Paywall"
+                },
+                "currency": "USD",
+                "splitTest": null,
+                "customName": null
+            },
+            "exposures": 153,
+            "conversions": 6,
+            "value": 0.0000,
+            "currency": "USD",
+            "changed": false,
+            "isCounted": true,
+            "conversionRate": 0.0392156862745098
+        },
+        {
+            "conversionSetMetadata": {
+                "category": {
+                    "id": "ExternalLink",
+                    "vxId": 101,
+                    "interaction": true
+                },
+                "source": {
+                    "id": "Micro"
+                },
+                "offer": null,
+                "term": {
+                    "id": "#https://www.dig-in.com/subscribe",
+                    "name": "https://www.dig-in.com/subscribe",
+                    "link": null
+                },
+                "template": {
+                    "id": "OTL0NW1XM8EW",
+                    "variantId": null,
+                    "name": "Inline - Paywall Gate",
+                    "variantName": null
+                },
+                "actionCard": {
+                    "id": "showTemplateLXIBIG7IWELS31",
+                    "name": "Downstream Paywall"
+                },
+                "currency": "USD",
+                "splitTest": null,
+                "customName": null
+            },
+            "exposures": 233,
+            "conversions": 12,
+            "value": 0.0000,
+            "currency": "USD",
+            "changed": false,
+            "isCounted": true,
+            "conversionRate": 0.05150214592274678
+        },
+        {
+            "conversionSetMetadata": {
+                "category": {
+                    "id": "ExternalLink",
+                    "vxId": 101,
+                    "interaction": true
+                },
+                "source": {
+                    "id": "Micro"
+                },
+                "offer": null,
+                "term": {
+                    "id": "#https://www.dig-in.com/subscribe",
+                    "name": "https://www.dig-in.com/subscribe",
+                    "link": null
+                },
+                "template": {
+                    "id": "OTL0NW1XM8EW",
+                    "variantId": null,
+                    "name": "Inline - Paywall Gate",
+                    "variantName": null
+                },
+                "actionCard": {
+                    "id": "showTemplateUH9NW8KHKAWV107",
+                    "name": "Test - Initial Paywall"
+                },
+                "currency": "USD",
+                "splitTest": {
+                    "id": "splitTest66K5ELPGLI5N54",
+                    "branchId": "splitTestVariantWCZ93A2EZED657",
+                    "branchName": "Paywall Test",
+                    "label": 0,
+                    "type": "NORMAL"
+                },
+                "customName": null
+            },
+            "exposures": 325,
+            "conversions": 7,
+            "value": 0.0000,
+            "currency": "USD",
+            "changed": false,
+            "isCounted": true,
+            "conversionRate": 0.021538461538461538
+        },
+        {
+            "conversionSetMetadata": {
+                "category": {
+                    "id": "Subscription",
+                    "vxId": 1,
+                    "interaction": false
+                },
+                "source": {
+                    "id": "VX"
+                },
+                "offer": {
+                    "id": "OFF1FYGJKDRI",
+                    "name": "Monthly & Annual - Default Membership "
+                },
+                "term": {
+                    "id": "TMQL3Z73USQ3",
+                    "name": "DI 1 Year Premium Membership",
+                    "link": null
+                },
+                "template": {
+                    "id": "OTDCREN51S5X",
+                    "variantId": null,
+                    "name": "Membership Offers - Subscribe - Monthly & Annual - TEST Benefits",
+                    "variantName": null
+                },
+                "actionCard": {
+                    "id": "showTemplateL3CBCK4KNBCG57",
+                    "name": "TEST Downstream Paywall"
+                },
+                "currency": "USD",
+                "splitTest": null,
+                "customName": null
+            },
+            "exposures": 12,
+            "conversions": 2,
+            "value": 620.0000,
+            "currency": "USD",
+            "changed": false,
+            "isCounted": true,
+            "conversionRate": 0.16666666666666666
+        },
+        {
+            "conversionSetMetadata": {
+                "category": {
+                    "id": "Subscription",
+                    "vxId": 1,
+                    "interaction": false
+                },
+                "source": {
+                    "id": "VX"
+                },
+                "offer": {
+                    "id": "OFF1FYGJKDRI",
+                    "name": "Monthly & Annual - Default Membership "
+                },
+                "term": {
+                    "id": "TMQL3Z73USQ3",
+                    "name": "DI 1 Year Premium Membership",
+                    "link": null
+                },
+                "template": {
+                    "id": "OTDCREN51S5X",
+                    "variantId": null,
+                    "name": "Membership Offers - Subscribe - Monthly & Annual - TEST Benefits",
+                    "variantName": null
+                },
+                "actionCard": {
+                    "id": "showTemplateUH9NW8KHKAWV107",
+                    "name": "Test - Initial Paywall"
+                },
+                "currency": "USD",
+                "splitTest": {
+                    "id": "splitTest66K5ELPGLI5N54",
+                    "branchId": "splitTestVariantWCZ93A2EZED657",
+                    "branchName": "Paywall Test",
+                    "label": 0,
+                    "type": "NORMAL"
+                },
+                "customName": null
+            },
+            "exposures": 7,
+            "conversions": 1,
+            "value": 295.0000,
+            "currency": "USD",
+            "changed": false,
+            "isCounted": true,
+            "conversionRate": 0.14285714285714285
+        },
+        {
+            "conversionSetMetadata": {
+                "category": {
+                    "id": "Subscription",
+                    "vxId": 1,
+                    "interaction": false
+                },
+                "source": {
+                    "id": "VX"
+                },
+                "offer": {
+                    "id": "OFF1FYGJKDRI",
+                    "name": "Monthly & Annual - Default Membership "
+                },
+                "term": {
+                    "id": "TMWNWTV4IRSO",
+                    "name": "DI 1 Month Premium Membership",
+                    "link": null
+                },
+                "template": {
+                    "id": "OTDCREN51S5X",
+                    "variantId": null,
+                    "name": "Membership Offers - Subscribe - Monthly & Annual - TEST Benefits",
+                    "variantName": null
+                },
+                "actionCard": {
+                    "id": "showTemplateLXIBIG7IWELS31",
+                    "name": "Downstream Paywall"
+                },
+                "currency": "USD",
+                "splitTest": null,
+                "customName": null
+            },
+            "exposures": 12,
+            "conversions": 1,
+            "value": 38.1100,
+            "currency": "USD",
+            "changed": false,
+            "isCounted": true,
+            "conversionRate": 0.08333333333333333
+        },
+        {
+            "conversionSetMetadata": {
+                "category": {
+                    "id": "Subscription",
+                    "vxId": 1,
+                    "interaction": false
+                },
+                "source": {
+                    "id": "VX"
+                },
+                "offer": {
+                    "id": "OFF1FYGJKDRI",
+                    "name": "Monthly & Annual - Default Membership "
+                },
+                "term": {
+                    "id": "TMWNWTV4IRSO",
+                    "name": "DI 1 Month Premium Membership",
+                    "link": null
+                },
+                "template": {
+                    "id": "OTDCREN51S5X",
+                    "variantId": null,
+                    "name": "Membership Offers - Subscribe - Monthly & Annual - TEST Benefits",
+                    "variantName": null
+                },
+                "actionCard": {
+                    "id": "showTemplateUH9NW8KHKAWV107",
+                    "name": "Test - Initial Paywall"
+                },
+                "currency": "USD",
+                "splitTest": {
+                    "id": "splitTest66K5ELPGLI5N54",
+                    "branchId": "splitTestVariantWCZ93A2EZED657",
+                    "branchName": "Paywall Test",
+                    "label": 0,
+                    "type": "NORMAL"
+                },
+                "customName": null
+            },
+            "exposures": 7,
+            "conversions": 1,
+            "value": 35.0000,
+            "currency": "USD",
+            "changed": false,
+            "isCounted": true,
+            "conversionRate": 0.14285714285714285
+        },
+        {
+            "conversionSetMetadata": {
+                "category": {
+                    "id": "Uncategorized",
+                    "vxId": -1,
+                    "interaction": false
+                },
+                "source": {
+                    "id": "VX"
+                },
+                "offer": {
+                    "id": "OFF1FYGJKDRI",
+                    "name": "Monthly & Annual - Default Membership "
+                },
+                "term": {
+                    "id": "TMQL3Z73USQ3",
+                    "name": "DI 1 Year Premium Membership",
+                    "link": null
+                },
+                "template": {
+                    "id": "OTDCREN51S5X",
+                    "variantId": null,
+                    "name": "Membership Offers - Subscribe - Monthly & Annual - TEST Benefits",
+                    "variantName": null
+                },
+                "actionCard": {
+                    "id": "showTemplate1EP8GN2FAXL259",
+                    "name": "Google Bing Cookie Paywall"
+                },
+                "currency": "USD",
+                "splitTest": null,
+                "customName": null
+            },
+            "exposures": 8,
+            "conversions": 0,
+            "value": 0,
+            "currency": "USD",
+            "changed": false,
+            "isCounted": true,
+            "conversionRate": 0.0
+        },
+        {
+            "conversionSetMetadata": {
+                "category": {
+                    "id": "Uncategorized",
+                    "vxId": -1,
+                    "interaction": false
+                },
+                "source": {
+                    "id": "VX"
+                },
+                "offer": {
+                    "id": "OFF1FYGJKDRI",
+                    "name": "Monthly & Annual - Default Membership "
+                },
+                "term": {
+                    "id": "TMQL3Z73USQ3",
+                    "name": "DI 1 Year Premium Membership",
+                    "link": null
+                },
+                "template": {
+                    "id": "OTDCREN51S5X",
+                    "variantId": null,
+                    "name": "Membership Offers - Subscribe - Monthly & Annual - TEST Benefits",
+                    "variantName": null
+                },
+                "actionCard": {
+                    "id": "showTemplate4G2B66YSER6J101",
+                    "name": "Show template"
+                },
+                "currency": "USD",
+                "splitTest": null,
+                "customName": null
+            },
+            "exposures": 6,
+            "conversions": 0,
+            "value": 0,
+            "currency": "USD",
+            "changed": false,
+            "isCounted": true,
+            "conversionRate": 0.0
+        },
+        {
+            "conversionSetMetadata": {
+                "category": {
+                    "id": "Uncategorized",
+                    "vxId": -1,
+                    "interaction": false
+                },
+                "source": {
+                    "id": "VX"
+                },
+                "offer": {
+                    "id": "OFF1FYGJKDRI",
+                    "name": "Monthly & Annual - Default Membership "
+                },
+                "term": {
+                    "id": "TMQL3Z73USQ3",
+                    "name": "DI 1 Year Premium Membership",
+                    "link": null
+                },
+                "template": {
+                    "id": "OTDCREN51S5X",
+                    "variantId": null,
+                    "name": "Membership Offers - Subscribe - Monthly & Annual - TEST Benefits",
+                    "variantName": null
+                },
+                "actionCard": {
+                    "id": "showTemplateFIDY87YIKSDB61",
+                    "name": "Google Bing Initial Paywall"
+                },
+                "currency": "USD",
+                "splitTest": null,
+                "customName": null
+            },
+            "exposures": 2,
+            "conversions": 0,
+            "value": 0,
+            "currency": "USD",
+            "changed": false,
+            "isCounted": true,
+            "conversionRate": 0.0
+        },
+        {
+            "conversionSetMetadata": {
+                "category": {
+                    "id": "Uncategorized",
+                    "vxId": -1,
+                    "interaction": false
+                },
+                "source": {
+                    "id": "VX"
+                },
+                "offer": {
+                    "id": "OFF1FYGJKDRI",
+                    "name": "Monthly & Annual - Default Membership "
+                },
+                "term": {
+                    "id": "TMQL3Z73USQ3",
+                    "name": "DI 1 Year Premium Membership",
+                    "link": null
+                },
+                "template": {
+                    "id": "OTDCREN51S5X",
+                    "variantId": null,
+                    "name": "Membership Offers - Subscribe - Monthly & Annual - TEST Benefits",
+                    "variantName": null
+                },
+                "actionCard": {
+                    "id": "showTemplateKE7SCAZBJCUF69",
+                    "name": "Control - Initial Registration"
+                },
+                "currency": "USD",
+                "splitTest": {
+                    "id": "splitTest66K5ELPGLI5N54",
+                    "branchId": "splitTestVariantEWN5OWK222Y956",
+                    "branchName": "Control",
+                    "label": -1,
+                    "type": "CONTROL"
+                },
+                "customName": null
+            },
+            "exposures": 9,
+            "conversions": 0,
+            "value": 0,
+            "currency": "USD",
+            "changed": false,
+            "isCounted": true,
+            "conversionRate": 0.0
+        },
+        {
+            "conversionSetMetadata": {
+                "category": {
+                    "id": "Uncategorized",
+                    "vxId": -1,
+                    "interaction": false
+                },
+                "source": {
+                    "id": "VX"
+                },
+                "offer": {
+                    "id": "OFF1FYGJKDRI",
+                    "name": "Monthly & Annual - Default Membership "
+                },
+                "term": {
+                    "id": "TMQL3Z73USQ3",
+                    "name": "DI 1 Year Premium Membership",
+                    "link": null
+                },
+                "template": {
+                    "id": "OTDCREN51S5X",
+                    "variantId": null,
+                    "name": "Membership Offers - Subscribe - Monthly & Annual - TEST Benefits",
+                    "variantName": null
+                },
+                "actionCard": {
+                    "id": "showTemplateLXIBIG7IWELS31",
+                    "name": "Downstream Paywall"
+                },
+                "currency": "USD",
+                "splitTest": null,
+                "customName": null
+            },
+            "exposures": 12,
+            "conversions": 0,
+            "value": 0,
+            "currency": "USD",
+            "changed": false,
+            "isCounted": true,
+            "conversionRate": 0.0
+        },
+        {
+            "conversionSetMetadata": {
+                "category": {
+                    "id": "Uncategorized",
+                    "vxId": -1,
+                    "interaction": false
+                },
+                "source": {
+                    "id": "VX"
+                },
+                "offer": {
+                    "id": "OFF1FYGJKDRI",
+                    "name": "Monthly & Annual - Default Membership "
+                },
+                "term": {
+                    "id": "TMWNWTV4IRSO",
+                    "name": "DI 1 Month Premium Membership",
+                    "link": null
+                },
+                "template": {
+                    "id": "OTDCREN51S5X",
+                    "variantId": null,
+                    "name": "Membership Offers - Subscribe - Monthly & Annual - TEST Benefits",
+                    "variantName": null
+                },
+                "actionCard": {
+                    "id": "showTemplate1EP8GN2FAXL259",
+                    "name": "Google Bing Cookie Paywall"
+                },
+                "currency": "USD",
+                "splitTest": null,
+                "customName": null
+            },
+            "exposures": 8,
+            "conversions": 0,
+            "value": 0,
+            "currency": "USD",
+            "changed": false,
+            "isCounted": true,
+            "conversionRate": 0.0
+        },
+        {
+            "conversionSetMetadata": {
+                "category": {
+                    "id": "Uncategorized",
+                    "vxId": -1,
+                    "interaction": false
+                },
+                "source": {
+                    "id": "VX"
+                },
+                "offer": {
+                    "id": "OFF1FYGJKDRI",
+                    "name": "Monthly & Annual - Default Membership "
+                },
+                "term": {
+                    "id": "TMWNWTV4IRSO",
+                    "name": "DI 1 Month Premium Membership",
+                    "link": null
+                },
+                "template": {
+                    "id": "OTDCREN51S5X",
+                    "variantId": null,
+                    "name": "Membership Offers - Subscribe - Monthly & Annual - TEST Benefits",
+                    "variantName": null
+                },
+                "actionCard": {
+                    "id": "showTemplate4G2B66YSER6J101",
+                    "name": "Show template"
+                },
+                "currency": "USD",
+                "splitTest": null,
+                "customName": null
+            },
+            "exposures": 6,
+            "conversions": 0,
+            "value": 0,
+            "currency": "USD",
+            "changed": false,
+            "isCounted": true,
+            "conversionRate": 0.0
+        },
+        {
+            "conversionSetMetadata": {
+                "category": {
+                    "id": "Uncategorized",
+                    "vxId": -1,
+                    "interaction": false
+                },
+                "source": {
+                    "id": "VX"
+                },
+                "offer": {
+                    "id": "OFF1FYGJKDRI",
+                    "name": "Monthly & Annual - Default Membership "
+                },
+                "term": {
+                    "id": "TMWNWTV4IRSO",
+                    "name": "DI 1 Month Premium Membership",
+                    "link": null
+                },
+                "template": {
+                    "id": "OTDCREN51S5X",
+                    "variantId": null,
+                    "name": "Membership Offers - Subscribe - Monthly & Annual - TEST Benefits",
+                    "variantName": null
+                },
+                "actionCard": {
+                    "id": "showTemplateFIDY87YIKSDB61",
+                    "name": "Google Bing Initial Paywall"
+                },
+                "currency": "USD",
+                "splitTest": null,
+                "customName": null
+            },
+            "exposures": 2,
+            "conversions": 0,
+            "value": 0,
+            "currency": "USD",
+            "changed": false,
+            "isCounted": true,
+            "conversionRate": 0.0
+        },
+        {
+            "conversionSetMetadata": {
+                "category": {
+                    "id": "Uncategorized",
+                    "vxId": -1,
+                    "interaction": false
+                },
+                "source": {
+                    "id": "VX"
+                },
+                "offer": {
+                    "id": "OFF1FYGJKDRI",
+                    "name": "Monthly & Annual - Default Membership "
+                },
+                "term": {
+                    "id": "TMWNWTV4IRSO",
+                    "name": "DI 1 Month Premium Membership",
+                    "link": null
+                },
+                "template": {
+                    "id": "OTDCREN51S5X",
+                    "variantId": null,
+                    "name": "Membership Offers - Subscribe - Monthly & Annual - TEST Benefits",
+                    "variantName": null
+                },
+                "actionCard": {
+                    "id": "showTemplateKE7SCAZBJCUF69",
+                    "name": "Control - Initial Registration"
+                },
+                "currency": "USD",
+                "splitTest": {
+                    "id": "splitTest66K5ELPGLI5N54",
+                    "branchId": "splitTestVariantEWN5OWK222Y956",
+                    "branchName": "Control",
+                    "label": -1,
+                    "type": "CONTROL"
+                },
+                "customName": null
+            },
+            "exposures": 9,
+            "conversions": 0,
+            "value": 0,
+            "currency": "USD",
+            "changed": false,
+            "isCounted": true,
+            "conversionRate": 0.0
+        },
+        {
+            "conversionSetMetadata": {
+                "category": {
+                    "id": "Uncategorized",
+                    "vxId": -1,
+                    "interaction": false
+                },
+                "source": {
+                    "id": "VX"
+                },
+                "offer": {
+                    "id": "OFF1FYGJKDRI",
+                    "name": "Monthly & Annual - Default Membership "
+                },
+                "term": {
+                    "id": "TMWNWTV4IRSO",
+                    "name": "DI 1 Month Premium Membership",
+                    "link": null
+                },
+                "template": {
+                    "id": "OTDCREN51S5X",
+                    "variantId": null,
+                    "name": "Membership Offers - Subscribe - Monthly & Annual - TEST Benefits",
+                    "variantName": null
+                },
+                "actionCard": {
+                    "id": "showTemplateL3CBCK4KNBCG57",
+                    "name": "TEST Downstream Paywall"
+                },
+                "currency": "USD",
+                "splitTest": null,
+                "customName": null
+            },
+            "exposures": 12,
+            "conversions": 0,
+            "value": 0,
+            "currency": "USD",
+            "changed": false,
+            "isCounted": true,
+            "conversionRate": 0.0
+        },
+        {
+            "conversionSetMetadata": {
+                "category": {
+                    "id": "Uncategorized",
+                    "vxId": -1,
+                    "interaction": false
+                },
+                "source": {
+                    "id": "VX"
+                },
+                "offer": {
+                    "id": "OFMW4UX96RVZ",
+                    "name": "Promotional Memberships"
+                },
+                "term": {
+                    "id": "TMBCRJWPW8VJ",
+                    "name": "DI 1 Year Premium Member Promo",
+                    "link": null
+                },
+                "template": {
+                    "id": "OTSR6PW99PB0",
+                    "variantId": null,
+                    "name": "SALE - Membership Offers - Subscribe - Monthly & Annual",
+                    "variantName": null
+                },
+                "actionCard": {
+                    "id": "showTemplate4G2B66YSER6J101",
+                    "name": "Show template"
+                },
+                "currency": "USD",
+                "splitTest": null,
+                "customName": null
+            },
+            "exposures": 1,
+            "conversions": 0,
+            "value": 0,
+            "currency": "USD",
+            "changed": false,
+            "isCounted": true,
+            "conversionRate": 0.0
+        },
+        {
+            "conversionSetMetadata": {
+                "category": {
+                    "id": "Uncategorized",
+                    "vxId": -1,
+                    "interaction": false
+                },
+                "source": {
+                    "id": "VX"
+                },
+                "offer": {
+                    "id": "OFMW4UX96RVZ",
+                    "name": "Promotional Memberships"
+                },
+                "term": {
+                    "id": "TMWNWTV4IRSO",
+                    "name": "DI 1 Month Premium Membership",
+                    "link": null
+                },
+                "template": {
+                    "id": "OTSR6PW99PB0",
+                    "variantId": null,
+                    "name": "SALE - Membership Offers - Subscribe - Monthly & Annual",
+                    "variantName": null
+                },
+                "actionCard": {
+                    "id": "showTemplate4G2B66YSER6J101",
+                    "name": "Show template"
+                },
+                "currency": "USD",
+                "splitTest": null,
+                "customName": null
+            },
+            "exposures": 1,
+            "conversions": 0,
+            "value": 0,
+            "currency": "USD",
+            "changed": false,
+            "isCounted": true,
+            "conversionRate": 0.0
+        }
+    ],
+    "groupings": [
+        {
+            "aspect": {
+                "name": "source"
+            },
+            "groupTotals": [
+                {
+                    "groupingKey": {
+                        "source": {
+                            "id": "Micro"
+                        }
+                    },
+                    "exposures": 8081,
+                    "conversions": 793,
+                    "value": 0.0000,
+                    "currency": "USD",
+                    "splitTests": [
+                        {
+                            "id": "splitTest66K5ELPGLI5N54",
+                            "name": "A/B Test",
+                            "exposures": 5443,
+                            "conversions": 603,
+                            "value": 0.0000,
+                            "counted": true,
+                            "conversionRate": 0.11078449384530589
+                        }
+                    ],
+                    "conversionRate": 0.09813141937878975
+                },
+                {
+                    "groupingKey": {
+                        "source": {
+                            "id": "VX"
+                        }
+                    },
+                    "exposures": 57,
+                    "conversions": 5,
+                    "value": 988.1100,
+                    "currency": "USD",
+                    "splitTests": [
+                        {
+                            "id": "splitTest66K5ELPGLI5N54",
+                            "name": "A/B Test",
+                            "exposures": 16,
+                            "conversions": 2,
+                            "value": 330.0000,
+                            "counted": true,
+                            "conversionRate": 0.125
+                        }
+                    ],
+                    "conversionRate": 0.08771929824561403
+                }
+            ]
+        },
+        {
+            "aspect": {
+                "name": "category"
+            },
+            "groupTotals": [
+                {
+                    "groupingKey": {
+                        "category": {
+                            "id": "Click",
+                            "vxId": 1003,
+                            "interaction": true
+                        }
+                    },
+                    "exposures": 8081,
+                    "conversions": 347,
+                    "value": 0.0000,
+                    "currency": "USD",
+                    "splitTests": [
+                        {
+                            "id": "splitTest66K5ELPGLI5N54",
+                            "name": "A/B Test",
+                            "exposures": 5443,
+                            "conversions": 235,
+                            "value": 0.0000,
+                            "counted": true,
+                            "conversionRate": 0.043174719823626674
+                        }
+                    ],
+                    "conversionRate": 0.04294023016953347
+                },
+                {
+                    "groupingKey": {
+                        "category": {
+                            "id": "Close",
+                            "vxId": 1004,
+                            "interaction": true
+                        }
+                    },
+                    "exposures": 3394,
+                    "conversions": 219,
+                    "value": 0.0000,
+                    "currency": "USD",
+                    "splitTests": [
+                        {
+                            "id": "splitTest66K5ELPGLI5N54",
+                            "name": "A/B Test",
+                            "exposures": 2632,
+                            "conversions": 214,
+                            "value": 0.0000,
+                            "counted": true,
+                            "conversionRate": 0.08130699088145897
+                        }
+                    ],
+                    "conversionRate": 0.06452563347083087
+                },
+                {
+                    "groupingKey": {
+                        "category": {
+                            "id": "ExternalLink",
+                            "vxId": 101,
+                            "interaction": true
+                        }
+                    },
+                    "exposures": 7542,
+                    "conversions": 246,
+                    "value": 0.0000,
+                    "currency": "USD",
+                    "splitTests": [
+                        {
+                            "id": "splitTest66K5ELPGLI5N54",
+                            "name": "A/B Test",
+                            "exposures": 4904,
+                            "conversions": 168,
+                            "value": 0.0000,
+                            "counted": true,
+                            "conversionRate": 0.03425774877650897
+                        }
+                    ],
+                    "conversionRate": 0.03261734287987271
+                },
+                {
+                    "groupingKey": {
+                        "category": {
+                            "id": "Subscription",
+                            "vxId": 1,
+                            "interaction": false
+                        }
+                    },
+                    "exposures": 31,
+                    "conversions": 5,
+                    "value": 988.1100,
+                    "currency": "USD",
+                    "splitTests": [
+                        {
+                            "id": "splitTest66K5ELPGLI5N54",
+                            "name": "A/B Test",
+                            "exposures": 7,
+                            "conversions": 2,
+                            "value": 330.0000,
+                            "counted": true,
+                            "conversionRate": 0.2857142857142857
+                        }
+                    ],
+                    "conversionRate": 0.16129032258064516
+                },
+                {
+                    "groupingKey": {
+                        "category": {
+                            "id": "Uncategorized",
+                            "vxId": -1,
+                            "interaction": false
+                        }
+                    },
+                    "exposures": 50,
+                    "conversions": 0,
+                    "value": 0,
+                    "currency": "USD",
+                    "splitTests": [
+                        {
+                            "id": "splitTest66K5ELPGLI5N54",
+                            "name": "A/B Test",
+                            "exposures": 9,
+                            "conversions": 0,
+                            "value": 0,
+                            "counted": true,
+                            "conversionRate": 0.0
+                        }
+                    ],
+                    "conversionRate": 0.0
+                }
+            ]
+        },
+        {
+            "aspect": {
+                "name": "action"
+            },
+            "groupTotals": [
+                {
+                    "groupingKey": {
+                        "actionCard": {
+                            "id": "showTemplate1EP8GN2FAXL259",
+                            "name": "Google Bing Cookie Paywall"
+                        },
+                        "offer": {
+                            "id": "OFF1FYGJKDRI",
+                            "name": "Monthly & Annual - Default Membership "
+                        },
+                        "template": {
+                            "id": "OTDCREN51S5X",
+                            "variantId": null,
+                            "name": "Membership Offers - Subscribe - Monthly & Annual - TEST Benefits",
+                            "variantName": null
+                        }
+                    },
+                    "exposures": 8,
+                    "conversions": 0,
+                    "value": 0,
+                    "currency": "USD",
+                    "splitTests": [],
+                    "conversionRate": 0.0
+                },
+                {
+                    "groupingKey": {
+                        "actionCard": {
+                            "id": "showTemplate1EP8GN2FAXL259",
+                            "name": "Google Bing Cookie Paywall"
+                        },
+                        "offer": null,
+                        "template": {
+                            "id": "OTL0NW1XM8EW",
+                            "variantId": null,
+                            "name": "Inline - Paywall Gate",
+                            "variantName": null
+                        }
+                    },
+                    "exposures": 443,
+                    "conversions": 21,
+                    "value": 0.0000,
+                    "currency": "USD",
+                    "splitTests": [],
+                    "conversionRate": 0.04740406320541761
+                },
+                {
+                    "groupingKey": {
+                        "actionCard": {
+                            "id": "showTemplate4G2B66YSER6J101",
+                            "name": "Show template"
+                        },
+                        "offer": {
+                            "id": "OFF1FYGJKDRI",
+                            "name": "Monthly & Annual - Default Membership "
+                        },
+                        "template": {
+                            "id": "OTDCREN51S5X",
+                            "variantId": null,
+                            "name": "Membership Offers - Subscribe - Monthly & Annual - TEST Benefits",
+                            "variantName": null
+                        }
+                    },
+                    "exposures": 6,
+                    "conversions": 0,
+                    "value": 0,
+                    "currency": "USD",
+                    "splitTests": [],
+                    "conversionRate": 0.0
+                },
+                {
+                    "groupingKey": {
+                        "actionCard": {
+                            "id": "showTemplate4G2B66YSER6J101",
+                            "name": "Show template"
+                        },
+                        "offer": {
+                            "id": "OFMW4UX96RVZ",
+                            "name": "Promotional Memberships"
+                        },
+                        "template": {
+                            "id": "OTSR6PW99PB0",
+                            "variantId": null,
+                            "name": "SALE - Membership Offers - Subscribe - Monthly & Annual",
+                            "variantName": null
+                        }
+                    },
+                    "exposures": 1,
+                    "conversions": 0,
+                    "value": 0,
+                    "currency": "USD",
+                    "splitTests": [],
+                    "conversionRate": 0.0
+                },
+                {
+                    "groupingKey": {
+                        "actionCard": {
+                            "id": "showTemplate4G2B66YSER6J101",
+                            "name": "Show template"
+                        },
+                        "offer": null,
+                        "template": {
+                            "id": "OT5YLGNPQVL9",
+                            "variantId": null,
+                            "name": "Registration Gate - Default",
+                            "variantName": null
+                        }
+                    },
+                    "exposures": 754,
+                    "conversions": 119,
+                    "value": 0.0000,
+                    "currency": "USD",
+                    "splitTests": [],
+                    "conversionRate": 0.15782493368700265
+                },
+                {
+                    "groupingKey": {
+                        "actionCard": {
+                            "id": "showTemplateFIDY87YIKSDB61",
+                            "name": "Google Bing Initial Paywall"
+                        },
+                        "offer": {
+                            "id": "OFF1FYGJKDRI",
+                            "name": "Monthly & Annual - Default Membership "
+                        },
+                        "template": {
+                            "id": "OTDCREN51S5X",
+                            "variantId": null,
+                            "name": "Membership Offers - Subscribe - Monthly & Annual - TEST Benefits",
+                            "variantName": null
+                        }
+                    },
+                    "exposures": 2,
+                    "conversions": 0,
+                    "value": 0,
+                    "currency": "USD",
+                    "splitTests": [],
+                    "conversionRate": 0.0
+                },
+                {
+                    "groupingKey": {
+                        "actionCard": {
+                            "id": "showTemplateFIDY87YIKSDB61",
+                            "name": "Google Bing Initial Paywall"
+                        },
+                        "offer": null,
+                        "template": {
+                            "id": "OTL0NW1XM8EW",
+                            "variantId": null,
+                            "name": "Inline - Paywall Gate",
+                            "variantName": null
+                        }
+                    },
+                    "exposures": 969,
+                    "conversions": 17,
+                    "value": 0.0000,
+                    "currency": "USD",
+                    "splitTests": [],
+                    "conversionRate": 0.017543859649122806
+                },
+                {
+                    "groupingKey": {
+                        "actionCard": {
+                            "id": "showTemplateKE7SCAZBJCUF69",
+                            "name": "Control - Initial Registration"
+                        },
+                        "offer": {
+                            "id": "OFF1FYGJKDRI",
+                            "name": "Monthly & Annual - Default Membership "
+                        },
+                        "template": {
+                            "id": "OTDCREN51S5X",
+                            "variantId": null,
+                            "name": "Membership Offers - Subscribe - Monthly & Annual - TEST Benefits",
+                            "variantName": null
+                        }
+                    },
+                    "exposures": 9,
+                    "conversions": 0,
+                    "value": 0,
+                    "currency": "USD",
+                    "splitTests": [],
+                    "conversionRate": 0.0
+                },
+                {
+                    "groupingKey": {
+                        "actionCard": {
+                            "id": "showTemplateKE7SCAZBJCUF69",
+                            "name": "Control - Initial Registration"
+                        },
+                        "offer": null,
+                        "template": {
+                            "id": "OT5YLGNPQVL9",
+                            "variantId": null,
+                            "name": "Registration Gate - Default",
+                            "variantName": null
+                        }
+                    },
+                    "exposures": 2486,
+                    "conversions": 257,
+                    "value": 0.0000,
+                    "currency": "USD",
+                    "splitTests": [],
+                    "conversionRate": 0.10337892196299275
+                },
+                {
+                    "groupingKey": {
+                        "actionCard": {
+                            "id": "showTemplateL3CBCK4KNBCG57",
+                            "name": "TEST Downstream Paywall"
+                        },
+                        "offer": {
+                            "id": "OFF1FYGJKDRI",
+                            "name": "Monthly & Annual - Default Membership "
+                        },
+                        "template": {
+                            "id": "OTDCREN51S5X",
+                            "variantId": null,
+                            "name": "Membership Offers - Subscribe - Monthly & Annual - TEST Benefits",
+                            "variantName": null
+                        }
+                    },
+                    "exposures": 12,
+                    "conversions": 2,
+                    "value": 620.0000,
+                    "currency": "USD",
+                    "splitTests": [],
+                    "conversionRate": 0.16666666666666666
+                },
+                {
+                    "groupingKey": {
+                        "actionCard": {
+                            "id": "showTemplateL3CBCK4KNBCG57",
+                            "name": "TEST Downstream Paywall"
+                        },
+                        "offer": null,
+                        "template": {
+                            "id": "OT169ICM54NX",
+                            "variantId": null,
+                            "name": "TEST DOWNSTREAM PAYWALL - Inline - Paywall Gate",
+                            "variantName": null
+                        }
+                    },
+                    "exposures": 86,
+                    "conversions": 8,
+                    "value": 0.0000,
+                    "currency": "USD",
+                    "splitTests": [],
+                    "conversionRate": 0.09302325581395349
+                },
+                {
+                    "groupingKey": {
+                        "actionCard": {
+                            "id": "showTemplateL3CBCK4KNBCG57",
+                            "name": "TEST Downstream Paywall"
+                        },
+                        "offer": null,
+                        "template": {
+                            "id": "OTL0NW1XM8EW",
+                            "variantId": null,
+                            "name": "Inline - Paywall Gate",
+                            "variantName": null
+                        }
+                    },
+                    "exposures": 153,
+                    "conversions": 9,
+                    "value": 0.0000,
+                    "currency": "USD",
+                    "splitTests": [],
+                    "conversionRate": 0.058823529411764705
+                },
+                {
+                    "groupingKey": {
+                        "actionCard": {
+                            "id": "showTemplateLXIBIG7IWELS31",
+                            "name": "Downstream Paywall"
+                        },
+                        "offer": {
+                            "id": "OFF1FYGJKDRI",
+                            "name": "Monthly & Annual - Default Membership "
+                        },
+                        "template": {
+                            "id": "OTDCREN51S5X",
+                            "variantId": null,
+                            "name": "Membership Offers - Subscribe - Monthly & Annual - TEST Benefits",
+                            "variantName": null
+                        }
+                    },
+                    "exposures": 12,
+                    "conversions": 1,
+                    "value": 38.1100,
+                    "currency": "USD",
+                    "splitTests": [],
+                    "conversionRate": 0.08333333333333333
+                },
+                {
+                    "groupingKey": {
+                        "actionCard": {
+                            "id": "showTemplateLXIBIG7IWELS31",
+                            "name": "Downstream Paywall"
+                        },
+                        "offer": null,
+                        "template": {
+                            "id": "OTL0NW1XM8EW",
+                            "variantId": null,
+                            "name": "Inline - Paywall Gate",
+                            "variantName": null
+                        }
+                    },
+                    "exposures": 233,
+                    "conversions": 16,
+                    "value": 0.0000,
+                    "currency": "USD",
+                    "splitTests": [],
+                    "conversionRate": 0.06866952789699571
+                },
+                {
+                    "groupingKey": {
+                        "actionCard": {
+                            "id": "showTemplateSTGEP05EJ86D168",
+                            "name": "Test - Exit Intent Register Modal"
+                        },
+                        "offer": null,
+                        "template": {
+                            "id": "OT8IHRWSKJN6",
+                            "variantId": null,
+                            "name": "Exit Intent Modal - Register",
+                            "variantName": null
+                        }
+                    },
+                    "exposures": 539,
+                    "conversions": 214,
+                    "value": 0.0000,
+                    "currency": "USD",
+                    "splitTests": [],
+                    "conversionRate": 0.3970315398886827
+                },
+                {
+                    "groupingKey": {
+                        "actionCard": {
+                            "id": "showTemplateUH9NW8KHKAWV107",
+                            "name": "Test - Initial Paywall"
+                        },
+                        "offer": {
+                            "id": "OFF1FYGJKDRI",
+                            "name": "Monthly & Annual - Default Membership "
+                        },
+                        "template": {
+                            "id": "OTDCREN51S5X",
+                            "variantId": null,
+                            "name": "Membership Offers - Subscribe - Monthly & Annual - TEST Benefits",
+                            "variantName": null
+                        }
+                    },
+                    "exposures": 7,
+                    "conversions": 2,
+                    "value": 330.0000,
+                    "currency": "USD",
+                    "splitTests": [],
+                    "conversionRate": 0.2857142857142857
+                },
+                {
+                    "groupingKey": {
+                        "actionCard": {
+                            "id": "showTemplateUH9NW8KHKAWV107",
+                            "name": "Test - Initial Paywall"
+                        },
+                        "offer": null,
+                        "template": {
+                            "id": "OT6N7G0IRXMB",
+                            "variantId": null,
+                            "name": "TEST INITIAL PAYWALL - Inline - Paywall Gate",
+                            "variantName": null
+                        }
+                    },
+                    "exposures": 2093,
+                    "conversions": 115,
+                    "value": 0.0000,
+                    "currency": "USD",
+                    "splitTests": [],
+                    "conversionRate": 0.054945054945054944
+                },
+                {
+                    "groupingKey": {
+                        "actionCard": {
+                            "id": "showTemplateUH9NW8KHKAWV107",
+                            "name": "Test - Initial Paywall"
+                        },
+                        "offer": null,
+                        "template": {
+                            "id": "OTL0NW1XM8EW",
+                            "variantId": null,
+                            "name": "Inline - Paywall Gate",
+                            "variantName": null
+                        }
+                    },
+                    "exposures": 325,
+                    "conversions": 17,
+                    "value": 0.0000,
+                    "currency": "USD",
+                    "splitTests": [],
+                    "conversionRate": 0.052307692307692305
+                }
+            ]
+        }
+    ],
+    "termsPerformances": [
+        {
+            "key": {
+                "offer": null,
+                "term": {
+                    "id": "#login",
+                    "name": "login",
+                    "link": null
+                },
+                "resource": null,
+                "category": {
+                    "id": "Click",
+                    "vxId": 1003,
+                    "interaction": true
+                },
+                "source": {
+                    "id": "Micro"
+                }
+            },
+            "exposures": 7070,
+            "conversions": 153,
+            "conversionRate": 0.02164073550212164,
+            "value": 0.0000
+        },
+        {
+            "key": {
+                "offer": null,
+                "term": {
+                    "id": "#logoTextLink",
+                    "name": "logoTextLink",
+                    "link": null
+                },
+                "resource": null,
+                "category": {
+                    "id": "Click",
+                    "vxId": 1003,
+                    "interaction": true
+                },
+                "source": {
+                    "id": "Micro"
+                }
+            },
+            "exposures": 472,
+            "conversions": 3,
+            "conversionRate": 0.006355932203389831,
+            "value": 0.0000
+        },
+        {
+            "key": {
+                "offer": null,
+                "term": {
+                    "id": "#premium-annual-member-clicked",
+                    "name": "premium-annual-member-clicked",
+                    "link": null
+                },
+                "resource": null,
+                "category": {
+                    "id": "Click",
+                    "vxId": 1003,
+                    "interaction": true
+                },
+                "source": {
+                    "id": "Micro"
+                }
+            },
+            "exposures": 5494,
+            "conversions": 8,
+            "conversionRate": 0.0014561339643247178,
+            "value": 0.0000
+        },
+        {
+            "key": {
+                "offer": null,
+                "term": {
+                    "id": "#premium-monthly-member-clicked",
+                    "name": "premium-monthly-member-clicked",
+                    "link": null
+                },
+                "resource": null,
+                "category": {
+                    "id": "Click",
+                    "vxId": 1003,
+                    "interaction": true
+                },
+                "source": {
+                    "id": "Micro"
+                }
+            },
+            "exposures": 2769,
+            "conversions": 4,
+            "conversionRate": 0.001444564824846515,
+            "value": 0.0000
+        },
+        {
+            "key": {
+                "offer": null,
+                "term": {
+                    "id": "#register",
+                    "name": "register",
+                    "link": null
+                },
+                "resource": null,
+                "category": {
+                    "id": "Click",
+                    "vxId": 1003,
+                    "interaction": true
+                },
+                "source": {
+                    "id": "Micro"
+                }
+            },
+            "exposures": 3779,
+            "conversions": 184,
+            "conversionRate": 0.048690129663932255,
+            "value": 0.0000
+        },
+        {
+            "key": {
+                "offer": null,
+                "term": {
+                    "id": "#close",
+                    "name": "close",
+                    "link": null
+                },
+                "resource": null,
+                "category": {
+                    "id": "Close",
+                    "vxId": 1004,
+                    "interaction": true
+                },
+                "source": {
+                    "id": "Micro"
+                }
+            },
+            "exposures": 3394,
+            "conversions": 219,
+            "conversionRate": 0.06452563347083087,
+            "value": 0.0000
+        },
+        {
+            "key": {
+                "offer": null,
+                "term": {
+                    "id": "#https://www.dig-in.com",
+                    "name": "https://www.dig-in.com",
+                    "link": null
+                },
+                "resource": null,
+                "category": {
+                    "id": "ExternalLink",
+                    "vxId": 101,
+                    "interaction": true
+                },
+                "source": {
+                    "id": "Micro"
+                }
+            },
+            "exposures": 2958,
+            "conversions": 4,
+            "conversionRate": 0.001352265043948614,
+            "value": 0.0000
+        },
+        {
+            "key": {
+                "offer": null,
+                "term": {
+                    "id": "#https://www.dig-in.com/subscribe",
+                    "name": "https://www.dig-in.com/subscribe",
+                    "link": null
+                },
+                "resource": null,
+                "category": {
+                    "id": "ExternalLink",
+                    "vxId": 101,
+                    "interaction": true
+                },
+                "source": {
+                    "id": "Micro"
+                }
+            },
+            "exposures": 7542,
+            "conversions": 242,
+            "conversionRate": 0.032086979581012996,
+            "value": 0.0000
+        },
+        {
+            "key": {
+                "offer": {
+                    "id": "OFF1FYGJKDRI",
+                    "name": "Monthly & Annual - Default Membership "
+                },
+                "term": {
+                    "id": "TMQL3Z73USQ3",
+                    "name": "DI 1 Year Premium Membership",
+                    "link": null
+                },
+                "resource": {
+                    "name": "Premium Member"
+                },
+                "category": {
+                    "id": "Subscription",
+                    "vxId": 1,
+                    "interaction": false
+                },
+                "source": {
+                    "id": "VX"
+                }
+            },
+            "exposures": 19,
+            "conversions": 3,
+            "conversionRate": 0.15789473684210525,
+            "value": 915.0000
+        },
+        {
+            "key": {
+                "offer": {
+                    "id": "OFF1FYGJKDRI",
+                    "name": "Monthly & Annual - Default Membership "
+                },
+                "term": {
+                    "id": "TMWNWTV4IRSO",
+                    "name": "DI 1 Month Premium Membership",
+                    "link": null
+                },
+                "resource": {
+                    "name": "Premium Member"
+                },
+                "category": {
+                    "id": "Subscription",
+                    "vxId": 1,
+                    "interaction": false
+                },
+                "source": {
+                    "id": "VX"
+                }
+            },
+            "exposures": 19,
+            "conversions": 2,
+            "conversionRate": 0.10526315789473684,
+            "value": 73.1100
+        },
+        {
+            "key": {
+                "offer": {
+                    "id": "OFF1FYGJKDRI",
+                    "name": "Monthly & Annual - Default Membership "
+                },
+                "term": {
+                    "id": "TMQL3Z73USQ3",
+                    "name": "DI 1 Year Premium Membership",
+                    "link": null
+                },
+                "resource": {
+                    "name": "Premium Member"
+                },
+                "category": {
+                    "id": "Uncategorized",
+                    "vxId": -1,
+                    "interaction": false
+                },
+                "source": {
+                    "id": "VX"
+                }
+            },
+            "exposures": 37,
+            "conversions": 0,
+            "conversionRate": 0.0,
+            "value": 0
+        },
+        {
+            "key": {
+                "offer": {
+                    "id": "OFF1FYGJKDRI",
+                    "name": "Monthly & Annual - Default Membership "
+                },
+                "term": {
+                    "id": "TMWNWTV4IRSO",
+                    "name": "DI 1 Month Premium Membership",
+                    "link": null
+                },
+                "resource": {
+                    "name": "Premium Member"
+                },
+                "category": {
+                    "id": "Uncategorized",
+                    "vxId": -1,
+                    "interaction": false
+                },
+                "source": {
+                    "id": "VX"
+                }
+            },
+            "exposures": 37,
+            "conversions": 0,
+            "conversionRate": 0.0,
+            "value": 0
+        },
+        {
+            "key": {
+                "offer": {
+                    "id": "OFMW4UX96RVZ",
+                    "name": "Promotional Memberships"
+                },
+                "term": {
+                    "id": "TMBCRJWPW8VJ",
+                    "name": "DI 1 Year Premium Member Promo",
+                    "link": null
+                },
+                "resource": {
+                    "name": "Premium Member"
+                },
+                "category": {
+                    "id": "Uncategorized",
+                    "vxId": -1,
+                    "interaction": false
+                },
+                "source": {
+                    "id": "VX"
+                }
+            },
+            "exposures": 1,
+            "conversions": 0,
+            "conversionRate": 0.0,
+            "value": 0
+        },
+        {
+            "key": {
+                "offer": {
+                    "id": "OFMW4UX96RVZ",
+                    "name": "Promotional Memberships"
+                },
+                "term": {
+                    "id": "TMWNWTV4IRSO",
+                    "name": "DI 1 Month Premium Membership",
+                    "link": null
+                },
+                "resource": {
+                    "name": "Premium Member"
+                },
+                "category": {
+                    "id": "Uncategorized",
+                    "vxId": -1,
+                    "interaction": false
+                },
+                "source": {
+                    "id": "VX"
+                }
+            },
+            "exposures": 1,
+            "conversions": 0,
+            "conversionRate": 0.0,
+            "value": 0
+        }
+    ],
+    "insights": {
+        "top": {
+            "currency": "USD",
+            "value": 988.1100
+        },
+        "additional": []
+    },
+    "conversionRate": 0.08771929824561403
+}
