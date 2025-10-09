@@ -28,3 +28,24 @@ Files
 
 Deploy
 - The app uses a Procfile for simple PaaS hosting. Ensure env vars are set for tokens in production and consider adding authentication if exposed publicly.
+
+Render (recommended)
+- Connect this repo as a Web Service in Render.
+- Build command: `pip install -r requirements.txt`
+- Start command: `gunicorn -w 2 -b 0.0.0.0:$PORT app:app`
+- PORT is injected by Render; `app.py` already respects it.
+
+Auto-deploys from GitHub
+- Render watches the default branch (main) by default.
+- Any push to `main` triggers a new deploy automatically. You can change this in Render → Settings → Auto Deploy.
+- If you use feature branches, open a PR and merge to `main` to deploy.
+- To deploy immediately without waiting for auto-build, use Render’s “Manual Deploy” → “Clear build cache & deploy” if needed.
+
+Environment variables
+- Set in Render → Environment:
+  - `PIANO_EXP_ID`, `PIANO_AID` (defaults), optionally `PIANO_BEARER` for server-side fetches (not recommended for user-owned tokens).
+  - `TRENDS_CACHE_TTL` (seconds) to control server-side caching for trends.
+
+Notes
+- If Piano requires IP allowlisting, use Render’s Static Outbound IP add-on or verify the current egress IP (Render shell: `curl -s https://api.ipify.org`).
+- For security, consider enabling a simple auth gate before exposing publicly.
