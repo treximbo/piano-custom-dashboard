@@ -5,11 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Piano Conversion Viewer</title>
   <link rel="stylesheet" href="/styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
 </head>
 <body>
   <div class="container">
     <h1>Piano Conversion Viewer</h1>
+    <nav class="nav">
+      <a href="#" data-page="manual" class="nav-link active">Manual Data Retrieval</a>
+      <a href="#" data-page="auto" class="nav-link">Automatic Data Retrieval</a>
+    </nav>
 
+    <section id="page-manual">
     <form id="fetch-form">
       <div class="grid">
         <label>
@@ -76,6 +82,77 @@
       <h3 id="action-card-terms-title" class="hidden">Template Click Conversions</h3>
       <div id="action-card-terms-wrap" class="table-wrap hidden">
         <table id="action-card-terms-table"></table>
+      </div>
+    </section>
+
+    <section id="exposure-trends" class="panel hidden">
+      <h2>Exposure Trends</h2>
+      <div class="actions" style="margin-bottom:8px;">
+        <label><input type="radio" name="cadence" value="days" checked /> Day over day</label>
+        <label><input type="radio" name="cadence" value="weeks" /> Week over week</label>
+        <label><input type="radio" name="cadence" value="months" /> Month over month</label>
+        <span style="flex:1"></span>
+        <button id="toggle-term-legend" type="button">Toggle Term Legend</button>
+      </div>
+      <div id="trends-note" class="status hidden">
+        Showing last 14 days. <button id="trends-load-more" type="button">Load previous 14 days</button>
+      </div>
+      <div class="table-wrap" style="padding:8px;">
+        <canvas id="exposureChart" height="140"></canvas>
+      </div>
+      <div id="term-legend" class="panel hidden" style="margin-top:8px; padding:8px;">
+        <div id="term-legend-content" class="terms"></div>
+      </div>
+    </section>
+
+    </section>
+
+    <section id="page-auto" class="hidden">
+      <h2>Automatic Data Retrieval</h2>
+      <div class="panel">
+        <div class="grid">
+          <label>
+            Brand
+            <select id="brandAuto"></select>
+          </label>
+          <label>
+            From (MM/DD/YYYY)
+            <input id="fromAuto" name="fromAuto" type="date" placeholder="mm/dd/yyyy" />
+          </label>
+          <label>
+            To (MM/DD/YYYY)
+            <input id="toAuto" name="toAuto" type="date" placeholder="mm/dd/yyyy" />
+          </label>
+        </div>
+        <div class="actions" style="margin-top:12px;">
+          <button id="loadExperiences" type="button">Load Experiences</button>
+        </div>
+      </div>
+
+      <div class="panel">
+        <h3>Connect to Piano (Composer token)</h3>
+        <p class="status" id="composer-status">Not connected. You can paste a token or connect via extension.</p>
+        <div class="actions">
+          <button id="connectComposer" type="button">Connect via Browser Extension</button>
+        </div>
+      </div>
+
+      <div id="experiences" class="panel hidden">
+        <h3>Experiences</h3>
+        <div class="exp-layout">
+          <div>
+            <input id="exp-search" class="search" type="text" placeholder="Search by name or ID" />
+            <div id="exp-statuses" class="exp-statuses">
+              <button type="button" class="status-item selected" data-status="active">Active</button>
+              <button type="button" class="status-item" data-status="scheduled">Scheduled</button>
+              <button type="button" class="status-item" data-status="inactive">Inactive</button>
+            </div>
+            <div id="exp-list" class="list"></div>
+          </div>
+          <div>
+            <div id="exp-data" class="table-wrap"></div>
+          </div>
+        </div>
       </div>
     </section>
 
