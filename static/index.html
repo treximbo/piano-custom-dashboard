@@ -13,6 +13,7 @@
     <nav class="nav">
       <a href="#" data-page="manual" class="nav-link active">Manual Data Retrieval</a>
       <a href="#" data-page="auto" class="nav-link">Automatic Data Retrieval</a>
+      <a href="#" data-page="info" class="nav-link">Information & Resources</a>
     </nav>
 
     <section id="page-manual">
@@ -85,6 +86,8 @@
       </div>
     </section>
 
+    
+
     <section id="exposure-trends" class="panel hidden">
       <h2>Exposure Trends</h2>
       <div class="actions" style="margin-bottom:8px;">
@@ -134,6 +137,8 @@
         <p class="status" id="composer-status">Not connected. You can paste a token or connect via extension.</p>
         <div class="actions">
           <button id="connectComposer" type="button">Connect via Browser Extension</button>
+          <a href="/download/extension.zip" id="download-extension" download>Download Extension (ZIP)</a>
+          <a href="https://dashboard.piano.io/publisher/home" target="_blank" rel="noopener" class="nav-link">Open Piano Dashboard</a>
         </div>
       </div>
 
@@ -154,6 +159,53 @@
           </div>
         </div>
       </div>
+    </section>
+
+    <section id="page-info" class="panel hidden">
+      <h2>Information & Resources</h2>
+      <p>This page documents how to set up and use the app, including the browser extension for capturing Piano Composer tokens.</p>
+
+      <h3>Quick Start</h3>
+      <ol>
+        <li>Optional: <a href="/download/extension.zip" id="download-extension-info" download>Download the Piano Composer Extension (ZIP)</a> and unzip it.</li>
+        <li>
+          Open <code>chrome://extensions</code>
+          <button id="copy-chrome-extensions" type="button">Copy</button>
+          → enable Developer Mode → Load unpacked → select the unzipped <code>extension</code> folder.
+          <div class="status" style="margin-top:4px;">Note: Browsers often block direct links to <code>chrome://</code> pages. Copy the URL and paste it into the address bar.</div>
+        </li>
+        <li>Open the Piano dashboard in a tab: <a href="https://dashboard.piano.io/publisher/home" target="_blank" rel="noopener">Piano Dashboard</a>.</li>
+        <li>Return here and click <strong>Connect via Browser Extension</strong>. The status should read: “Connected to Piano (Composer token received).”</li>
+        <li>Manual tab: paste or use the captured token, choose brand, expId, and date range, then Fetch.</li>
+        <li>Automatic tab: choose brand and click Load Experiences; then click an experience to view its data.</li>
+      </ol>
+
+      <h3>Troubleshooting Token Capture</h3>
+      <ul>
+        <li>If you see “Token invalid or expired…”, the Composer token likely expired. Click Connect again while the Piano dashboard tab is open.</li>
+        <li>If “No response from extension…” shows: ensure the extension is installed, Site access is allowed for this site, and try again.</li>
+        <li>You can always paste a fresh Bearer token manually in the Manual tab as a fallback.</li>
+      </ul>
+
+      <h3>Environment Variables (Server)</h3>
+      <ul>
+        <li><code>PIANO_API_TOKEN</code> or <code>PIANO_API_TOKEN_&lt;AID&gt;</code>: used by Automatic → Experiences endpoint.</li>
+        <li><code>TRENDS_CACHE_TTL</code>: seconds to cache trend slices.</li>
+        <li>Do not store user Composer tokens on the server; tokens are kept in the browser only.</li>
+      </ul>
+
+      <h3>Security Notes</h3>
+      <ul>
+        <li>Keep this app behind an auth gate if exposing publicly.</li>
+        <li>Composer tokens expire regularly; don’t hardcode them.</li>
+        <li>Only install the extension where needed; review its host permissions.</li>
+      </ul>
+
+      <h3>Helpful Links</h3>
+      <ul>
+        <li><a href="/download/extension.zip" target="_blank" rel="noopener">Download Extension (ZIP)</a></li>
+        <li><a href="https://dashboard.piano.io/publisher/home" target="_blank" rel="noopener">Open Piano Dashboard</a></li>
+      </ul>
     </section>
 
     <section id="template-click-all" class="panel hidden">

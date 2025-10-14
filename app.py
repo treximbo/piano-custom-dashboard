@@ -3,6 +3,8 @@ from __future__ import annotations
 
 import os
 from pathlib import Path
+import io
+import zipfile
 from typing import Any, Dict
 
 from flask import Flask, jsonify, request, send_file
@@ -350,6 +352,27 @@ def api_experiences():
             groups["inactive"].append(it)
 
     return jsonify({"ok": True, "aid": aid, "groups": groups, "count": len(items)})
+
+
+@app.get("/download/extension.zip")
+def download_extension_zip():
+    """Package the browser extension directory into a zip and return it."""
+    root = Path(__file__).resolve().parent
+    ext_dir = root / "extension"
+    if not ext_dir.exists():
+        return jsonify({"error": "Extension directory not found"}), 404
+    buf = io.BytesIO()
+    with zipfile.ZipFile(buf, mode="w", compression=zipfile.ZIP_DEFLATED) as zf:
+        for path in ext_dir.rglob("*"):
+            if path.is_file():
+                zf.write(path, arcname=str(path.relative_to(ext_dir)))
+    buf.seek(0)
+    return send_file(
+        buf,
+        mimetype="application/zip",
+        as_attachment=True,
+        download_name="piano_composer_extension.zip",
+    )
 
 
 if __name__ == "__main__":

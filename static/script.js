@@ -59,24 +59,52 @@
     statusEl.textContent = msg || '';
   }
 
+  function markComposerTokenInvalid(extraMsg) {
+    const cs = document.getElementById('composer-status');
+    if (cs) cs.textContent = 'Token invalid or expired. Click "Connect via Browser Extension" to refresh, then try again.' + (extraMsg ? ` (${extraMsg})` : '');
+  }
+
+  function setComposerStatus(msg) {
+    const cs = document.getElementById('composer-status');
+    if (cs) cs.textContent = msg || '';
+  }
+
   function show(el) { el.classList.remove('hidden'); }
   function hide(el) { el.classList.add('hidden'); }
 
-  // Simple nav routing
-  document.querySelectorAll('.nav-link').forEach(link => {
+  function switchPage(page) {
+    const pages = ['page-manual','page-auto','page-info'];
+    pages.forEach(id => hide(document.getElementById(id)));
+    const target = document.getElementById(`page-${page}`);
+    if (target) show(target);
+    // When not on manual, hide any previously shown data panels so they don't overlap
+    if (page !== 'manual') {
+      ['summary','periods','rows','action-cards','template-click-all','exposure-trends'].forEach(id => {
+        const el = document.getElementById(id);
+        if (el) el.classList.add('hidden');
+      });
+    }
+    // Hide experiences panel unless on auto
+    if (page !== 'auto') {
+      const exp = document.getElementById('experiences');
+      if (exp) exp.classList.add('hidden');
+    }
+    // Ensure auto brand dropdown has options on auto
+    if (page === 'auto') {
+      if (brandAuto && (!brandAuto.options || brandAuto.options.length === 0)) {
+        brandAuto.innerHTML = brandSelect ? brandSelect.innerHTML : '<option value="">— Select —</option>';
+      }
+    }
+  }
+
+  // Simple nav routing (only nav links that actually switch pages)
+  document.querySelectorAll('.nav-link[data-page]').forEach(link => {
     link.addEventListener('click', (e) => {
       e.preventDefault();
       document.querySelectorAll('.nav-link').forEach(a => a.classList.remove('active'));
       link.classList.add('active');
       const page = link.getAttribute('data-page');
-      if (page === 'manual') { show(document.getElementById('page-manual')); hide(document.getElementById('page-auto')); }
-      if (page === 'auto') {
-        hide(document.getElementById('page-manual')); show(document.getElementById('page-auto'));
-        // Ensure auto brand dropdown has options
-        if (brandAuto && (!brandAuto.options || brandAuto.options.length === 0)) {
-          brandAuto.innerHTML = brandSelect ? brandSelect.innerHTML : '<option value="">— Select —</option>';
-        }
-      }
+      if (page) switchPage(page);
     });
   });
 
@@ -722,7 +750,13 @@
         body: JSON.stringify(payload)
       });
       const json = await res.json();
-      if (!json.ok) throw new Error(json.error || 'Request failed');
+      if (!json.ok) {
+        // If 502 or message indicates token issue, warn user to refresh via extension
+        if (res.status === 502 || /token|bearer|auth|unauthor/i.test(String(json.error || ''))) {
+          markComposerTokenInvalid(String(json.error || 'Bad Gateway'));
+        }
+        throw new Error(json.error || 'Request failed');
+      }
       render(json.data);
       setStatus('');
       updateExposureChart();
@@ -913,7 +947,12 @@
     try {
       const res = await fetch('/api/report', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(params) });
       const json = await res.json();
-      if (!json.ok) throw new Error(json.error || 'Failed to fetch composer data');
+      if (!json.ok) {
+        if (res.status === 502 || /token|bearer|auth|unauthor/i.test(String(json.error || ''))) {
+          markComposerTokenInvalid(String(json.error || 'Bad Gateway'));
+        }
+        throw new Error(json.error || 'Failed to fetch composer data');
+      }
       // Render Action Card reporting inside the Automatic panel
       renderActionCardsAuto(json.data || {});
     } catch (err) {
@@ -1247,11 +1286,90 @@
   if (connectBtn && !connectBtn._wired) {
     connectBtn._wired = true;
     connectBtn.addEventListener('click', () => {
-      // Instructions for extension will be provided; here we just wait for a postMessage
-      setStatus('Waiting for token from extension...');
+      // Request token from the extension. If extension isn't installed or allowed, show guidance.
+      setComposerStatus('Requesting token via extension...');
       try {
         window.postMessage({ type: 'REQUEST_PIANO_TOKEN' }, window.location.origin);
-      } catch {}
+        // If no response arrives within timeout, show help text
+        clearTimeout(connectBtn._timeout);
+        connectBtn._timeout = setTimeout(() => {
+          // Only show if we haven't received a token yet
+          const cur = (localStorage.getItem('composer_bearer') || '').trim();
+          if (!cur) {
+            setComposerStatus('No response from extension. Ensure it\'s installed, has access to this site (Site access: On), and the Piano dashboard tab is open while capturing. Then click Connect again.');
+          }
+        }, 2000);
+      } catch {
+        setComposerStatus('Could not post message to extension.');
+      }
+    });
+  }
+
+  // Force navigation for extension ZIP if some browsers block programmatic download
+  const dlExt = document.getElementById('download-extension');
+  if (dlExt && !dlExt._wired) {
+    dlExt._wired = true;
+    dlExt.addEventListener('click', (e) => {
+      // Some SPA routers may prevent default; ensure full navigation
+      e.stopPropagation();
+      // Let the browser handle the navigation normally
+      // If nothing happens, try programmatic fetch as fallback
+      setTimeout(async () => {
+        // If user stayed on page and no download started, attempt manual fetch
+        try {
+          const res = await fetch('/download/extension.zip');
+          if (res.ok) {
+            const blob = await res.blob();
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'piano_composer_extension.zip';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+          }
+        } catch {}
+      }, 150);
+    });
+  }
+  // Info page ZIP link
+  const dlExtInfo = document.getElementById('download-extension-info');
+  if (dlExtInfo && !dlExtInfo._wired) {
+    dlExtInfo._wired = true;
+    dlExtInfo.addEventListener('click', (e) => {
+      e.stopPropagation();
+      setTimeout(async () => {
+        try {
+          const res = await fetch('/download/extension.zip');
+          if (res.ok) {
+            const blob = await res.blob();
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'piano_composer_extension.zip';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+          }
+        } catch {}
+      }, 150);
+    });
+  }
+
+  // Copy chrome://extensions to clipboard helper
+  const copyExtBtn = document.getElementById('copy-chrome-extensions');
+  if (copyExtBtn && !copyExtBtn._wired) {
+    copyExtBtn._wired = true;
+    copyExtBtn.addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText('chrome://extensions');
+        copyExtBtn.textContent = 'Link Copied';
+        setStatus('Copied "chrome://extensions" to clipboard');
+      } catch {
+        setStatus('Copy failed. Manually copy: chrome://extensions');
+      }
     });
   }
 
@@ -1262,8 +1380,7 @@
     if (data && data.type === 'PIANO_COMPOSER_BEARER' && data.token) {
       try {
         localStorage.setItem('composer_bearer', data.token);
-        const status = document.getElementById('composer-status');
-        if (status) status.textContent = 'Connected to Piano (Composer token received).';
+        setComposerStatus('Connected to Piano (Composer token received).');
         setStatus('');
       } catch {}
     }
