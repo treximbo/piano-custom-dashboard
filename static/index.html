@@ -5,11 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Piano Conversion Viewer</title>
   <link rel="stylesheet" href="/styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
 </head>
 <body>
   <div class="container">
     <h1>Piano Conversion Viewer</h1>
+    <nav class="nav">
+      <a href="#" data-page="manual" class="nav-link active">Manual Data Retrieval</a>
+      <a href="#" data-page="auto" class="nav-link">Automatic Data Retrieval</a>
+      <a href="#" data-page="info" class="nav-link">Information & Resources</a>
+    </nav>
 
+    <section id="page-manual">
     <form id="fetch-form">
       <div class="grid">
         <label>
@@ -77,6 +84,134 @@
       <div id="action-card-terms-wrap" class="table-wrap hidden">
         <table id="action-card-terms-table"></table>
       </div>
+    </section>
+
+    
+
+    <section id="exposure-trends" class="panel hidden">
+      <h2>Exposure Trends</h2>
+      <div class="actions" style="margin-bottom:8px;">
+        <label><input type="radio" name="cadence" value="days" checked /> Day over day</label>
+        <label><input type="radio" name="cadence" value="weeks" /> Week over week</label>
+        <label><input type="radio" name="cadence" value="months" /> Month over month</label>
+        <span style="flex:1"></span>
+        <button id="toggle-term-legend" type="button">Toggle Term Legend</button>
+      </div>
+      <div id="trends-note" class="status hidden">
+        Showing last 14 days. <button id="trends-load-more" type="button">Load previous 14 days</button>
+      </div>
+      <div class="table-wrap" style="padding:8px;">
+        <canvas id="exposureChart" height="140"></canvas>
+      </div>
+      <div id="term-legend" class="panel hidden" style="margin-top:8px; padding:8px;">
+        <div id="term-legend-content" class="terms"></div>
+      </div>
+    </section>
+
+    </section>
+
+    <section id="page-auto" class="hidden">
+      <h2>Automatic Data Retrieval</h2>
+      <div class="panel">
+        <div class="grid">
+          <label>
+            Brand
+            <select id="brandAuto"></select>
+          </label>
+          <label>
+            From (MM/DD/YYYY)
+            <input id="fromAuto" name="fromAuto" type="date" placeholder="mm/dd/yyyy" />
+          </label>
+          <label>
+            To (MM/DD/YYYY)
+            <input id="toAuto" name="toAuto" type="date" placeholder="mm/dd/yyyy" />
+          </label>
+        </div>
+        <div class="actions" style="margin-top:12px;">
+          <button id="loadExperiences" type="button">Load Experiences</button>
+        </div>
+      </div>
+
+      <div class="panel">
+        <h3>Connect to Piano (Composer token)</h3>
+        <p class="status" id="composer-status">Not connected. You can paste a token or connect via extension.</p>
+        <div id="composer-token-wrap" class="status hidden">
+          <label style="display:block; font-size:12px; color:#a3b3c6; margin-bottom:4px;">Current token (temporary)</label>
+          <input id="composer-token" type="text" readonly style="width:100%;" />
+        </div>
+        <div class="actions">
+          <button id="connectComposer" type="button">Connect via Browser Extension</button>
+          <a href="/download/extension.zip" id="download-extension" download>Download Extension (ZIP)</a>
+          <a href="https://dashboard.piano.io/publisher/home" target="_blank" rel="noopener" class="nav-link">Open Piano Dashboard</a>
+        </div>
+      </div>
+
+      <div id="experiences" class="panel hidden">
+        <h3>Experiences</h3>
+        <div class="exp-layout">
+          <div>
+            <input id="exp-search" class="search" type="text" placeholder="Search by name or ID" />
+            <div id="exp-statuses" class="exp-statuses">
+              <button type="button" class="status-item selected" data-status="active">Active</button>
+              <button type="button" class="status-item" data-status="scheduled">Scheduled</button>
+              <button type="button" class="status-item" data-status="inactive">Inactive</button>
+            </div>
+            <div id="exp-list" class="list"></div>
+          </div>
+          <div>
+            <h3 id="exp-title" class="hidden"></h3>
+            <div id="exp-data" class="table-wrap"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="page-info" class="panel hidden">
+      <h2>Information & Resources</h2>
+      <p>This page documents how to set up and use the app, including the browser extension for capturing Piano Composer tokens.</p>
+
+      <h3>Quick Start</h3>
+      <ol>
+        <li>Optional: <a href="/download/extension.zip" id="download-extension-info" download>Download the Piano Composer Extension (ZIP)</a> and unzip it.</li>
+        <li>
+          Open <code>chrome://extensions</code>
+          <button id="copy-chrome-extensions" type="button">Copy</button>
+          → enable Developer Mode → Load unpacked → select the unzipped <code>extension</code> folder.
+          <div class="status" style="margin-top:4px;">Note: Browsers often block direct links to <code>chrome://</code> pages. Copy the URL and paste it into the address bar.</div>
+        </li>
+        <li>Open the Piano dashboard in a tab: <a href="https://dashboard.piano.io/publisher/home" target="_blank" rel="noopener">Piano Dashboard</a>.</li>
+        <li>In the dashboard, open an experience and click its <strong>Conversion Report</strong> so a composer conversion API request is made; the extension will capture its Bearer token.</li>
+        <li>Return here and click <strong>Connect via Browser Extension</strong>. The status should read: “Connected to Piano (Composer token received).”</li>
+        <li>Manual tab: paste or use the captured token, choose brand, expId, and date range, then Fetch.</li>
+        <li>Automatic tab: choose brand and click Load Experiences; then click an experience to view its data.</li>
+      </ol>
+
+      <h3>Troubleshooting Token Capture</h3>
+      <ul>
+        <li>If you see “Token invalid or expired…”, the Composer token likely expired. Click Connect again while the Piano dashboard tab is open.</li>
+        <li>If “No response from extension…” shows: ensure the extension is installed, Site access is allowed for this site, and try again.</li>
+        <li>You can always paste a fresh Bearer token manually in the Manual tab as a fallback.</li>
+      </ul>
+
+      <h3>Environment Variables (Server)</h3>
+      <ul>
+        <li><code>PIANO_API_TOKEN</code> or <code>PIANO_API_TOKEN_&lt;AID&gt;</code>: used by Automatic → Experiences endpoint.</li>
+        <li><code>TRENDS_CACHE_TTL</code>: seconds to cache trend slices.</li>
+        <li>Do not store user Composer tokens on the server; tokens are kept in the browser only.</li>
+      </ul>
+
+      <h3>Security Notes</h3>
+      <ul>
+        <li>Keep this app behind an auth gate if exposing publicly.</li>
+        <li>Composer tokens expire regularly; don’t hardcode them.</li>
+        <li>Only install the extension where needed; review its host permissions.</li>
+      </ul>
+
+      <h3>Helpful Links</h3>
+      <ul>
+        <li><a href="/download/extension.zip" target="_blank" rel="noopener">Download Extension (ZIP)</a></li>
+        <li><a href="https://dashboard.piano.io/publisher/home" target="_blank" rel="noopener">Open Piano Dashboard</a></li>
+      </ul>
     </section>
 
     <section id="template-click-all" class="panel hidden">

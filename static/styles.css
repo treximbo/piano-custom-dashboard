@@ -2,9 +2,13 @@
 body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: 0; background: #0b0f14; color: #e6edf3; }
 .container { max-width: 1100px; margin: 24px auto; padding: 0 16px; }
 h1 { margin: 0 0 16px; font-size: 24px; }
+.nav { display: flex; gap: 16px; margin-bottom: 12px; }
+.nav-link { color: #93c5fd; text-decoration: none; }
+.nav-link.active { color: #fff; font-weight: 600; }
 
 form { background: #0e1621; border: 1px solid #1f2a37; padding: 16px; border-radius: 8px; }
 .grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.grid-3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
 label { display: flex; flex-direction: column; font-size: 12px; gap: 6px; }
 input, select { background: #0b1320; color: #e6edf3; border: 1px solid #1f2a37; padding: 8px 10px; border-radius: 6px; }
 /* Make native date inputs use dark UI and white calendar icon (Chromium/WebKit) */
@@ -25,9 +29,30 @@ button[disabled] { opacity: 0.5; cursor: default; }
 .kpi-value { font-size: 20px; font-weight: 700; }
 .metrics { margin: 12px 0; }
  .empty { color: #a3b3c6; margin: 8px 0; }
-/* removed chip styles in favor of table */
+.terms { margin-top: 8px; font-size: 13px; color: #c9d4e1; }
+.terms .term { display: inline-block; background: #0b1320; border: 1px solid #1f2a37; padding: 4px 8px; border-radius: 12px; margin: 4px 6px 0 0; cursor: pointer; }
 .hidden { display: none; }
-.table-wrap { overflow: auto; max-height: 480px; border: 1px solid #1f2a37; border-radius: 6px; }
+.table-wrap { overflow: auto; border: 1px solid #1f2a37; border-radius: 6px; }
+.list { display: flex; flex-direction: column; gap: 8px; }
+.list .item { padding: 8px; border: 1px solid #1f2a37; border-radius: 6px; background: #0b1320; cursor: pointer; }
+.list .item.selected { outline: 2px solid #2563eb; outline-offset: -2px; }
+.status-active-border { border-left: 3px solid #10b981 !important; }
+.status-scheduled-border { border-left: 3px solid #eab308 !important; }
+.status-inactive-border { border-left: 3px solid #ef4444 !important; }
+.exp-layout { display: grid; grid-template-columns: 25% 1fr; gap: 12px; }
+.exp-layout > div:first-child { min-width: 0; }
+.exp-layout > div:last-child { min-width: 0; }
+@media (max-width: 860px) {
+  .exp-layout { grid-template-columns: 1fr; }
+}
+.exp-statuses { display: flex; flex-direction: column; gap: 8px; margin-top: 8px; }
+.status-item { color: #0b0f14; border: 1px solid #1f2a37; padding: 8px; border-radius: 6px; text-align: left; cursor: pointer; opacity: 0.3; transition: opacity 0.15s ease; }
+.status-item.selected { opacity: 1; }
+/* Status-specific background colors */
+.status-item[data-status="active"] { background-color: #10b981; color: #062814; }
+.status-item[data-status="scheduled"] { background-color: #eab308; color: #1f1a05; }
+.status-item[data-status="inactive"] { background-color: #ef4444; color: #2a0909; }
+.search { width: 100%; margin-bottom: 8px; background: #0b1320; color: #e6edf3; border: 1px solid #1f2a37; padding: 8px 10px; border-radius: 6px; }
 
 /* Table */
 table { width: 100%; border-collapse: collapse; font-size: 13px; }
@@ -39,3 +64,6 @@ tr:nth-child(even) { background: #0b1320; }
 .row-clickable { cursor: pointer; }
 tr.selected { outline: 2px solid #2563eb; outline-offset: -2px; }
 tr.highlight { background: rgba(37, 99, 235, 0.15) !important; }
+
+/* Chart container tweak */
+#exposure-trends .table-wrap { max-height: none; }
