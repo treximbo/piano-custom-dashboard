@@ -2,35 +2,23 @@
 chrome.webRequest.onBeforeSendHeaders.addListener(
   (details) => {
     try {
+      // Only capture from real GET requests (ignore OPTIONS preflight and others)
+      const method = (details.method || '').toUpperCase();
+      if (method !== 'GET') { return; }
       const hdr = details.requestHeaders || [];
       const auth = hdr.find(h => h && h.name && h.name.toLowerCase() === 'authorization');
-      if (!auth || !auth.value) {
-        console.log('[PianoExt] No Authorization header on', details.url);
-        return;
-      }
+      if (!auth || !auth.value) { return; }
       const token = auth.value.trim().replace(/^Bearer\s+/i, '');
-      if (!token) {
-        console.log('[PianoExt] Authorization header present but no token');
-        return;
-      }
+      if (!token) { return; }
 
       // Save token locally
-      chrome.storage.local.set({ composer_bearer: token }, () => {
-        console.log('[PianoExt] Stored composer bearer');
-      });
+      chrome.storage.local.set({ composer_bearer: token, composer_bearer_captured_at: Date.now() }, () => {});
 
       // Notify any open dashboard tabs
       chrome.tabs.query({}, (tabs) => {
         tabs.forEach((t) => {
           if (!t.id) return;
-          chrome.tabs.sendMessage(t.id, { type: 'PIANO_COMPOSER_BEARER', token }, () => {
-            const err = chrome.runtime.lastError;
-            if (err) {
-              console.log('[PianoExt] sendMessage error (tab likely not our app)', err.message);
-            } else {
-              console.log('[PianoExt] Notified tab', t.id);
-            }
-          });
+          chrome.tabs.sendMessage(t.id, { type: 'PIANO_COMPOSER_BEARER', token }, () => { /* ignore */ });
         });
       });
     } catch (e) {
@@ -39,9 +27,24 @@ chrome.webRequest.onBeforeSendHeaders.addListener(
   },
   {
     urls: [
+      // Only target the conversion endpoint; the method filter above avoids OPTIONS
       "https://prod-ai-report-api.piano.io/report/composer/conversion*",
       "https://dashboard.piano.io/publisher/composer/edit/*/conversionReport*"
     ]
   },
   ["requestHeaders", "extraHeaders"]
 );
+
+// Respond to token requests from content script to avoid invalidated context issues
+chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {
+  try {
+    if (msg && msg.type === 'GET_TOKEN') {
+      chrome.storage.local.get('composer_bearer', (res) => {
+        sendResponse({ token: res && res.composer_bearer });
+      });
+      return true; // async response
+    }
+  } catch (e) {
+    // ignore
+  }
+});

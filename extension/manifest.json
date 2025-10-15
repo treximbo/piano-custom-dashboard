@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Piano Composer Token Capture",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Captures Authorization bearer used by Piano composer API and sends it to the dashboard.",
   "permissions": ["storage", "webRequest", "tabs"],
   "host_permissions": [
@@ -19,6 +19,13 @@
         "https://piano-custom-dashboard.onrender.com/*"
       ],
       "js": ["app_bridge.js"],
+      "run_at": "document_start"
+    },
+    {
+      "matches": [
+        "https://dashboard.piano.io/*"
+      ],
+      "js": ["dashboard_logger.js"],
       "run_at": "document_start"
     }
   ],

@@ -35,6 +35,7 @@ button[disabled] { opacity: 0.5; cursor: default; }
 .table-wrap { overflow: auto; border: 1px solid #1f2a37; border-radius: 6px; }
 .list { display: flex; flex-direction: column; gap: 8px; }
 .list .item { padding: 8px; border: 1px solid #1f2a37; border-radius: 6px; background: #0b1320; cursor: pointer; }
+.list .item.selected { outline: 2px solid #2563eb; outline-offset: -2px; }
 .status-active-border { border-left: 3px solid #10b981 !important; }
 .status-scheduled-border { border-left: 3px solid #eab308 !important; }
 .status-inactive-border { border-left: 3px solid #ef4444 !important; }

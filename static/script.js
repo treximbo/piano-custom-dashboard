@@ -69,6 +69,48 @@
     if (cs) cs.textContent = msg || '';
   }
 
+  function showComposerTokenPreview(token) {
+    const wrap = document.getElementById('composer-token-wrap');
+    const input = document.getElementById('composer-token');
+    if (!wrap || !input) return;
+    if (token && token.length) {
+      input.value = token;
+      wrap.classList.remove('hidden');
+    } else {
+      input.value = '';
+      wrap.classList.add('hidden');
+    }
+  }
+
+  function syncBearerFromExtensionLocal() {
+    try {
+      const tok = (localStorage.getItem('composer_bearer') || '').trim();
+      if (tok) {
+        if (bearerInput) bearerInput.value = tok;
+        showComposerTokenPreview(tok);
+        setComposerStatus('Token available from extension.');
+      }
+    } catch {}
+  }
+
+  async function triggerExtensionZipDownload() {
+    try {
+      const res = await fetch('/download/extension.zip');
+      if (!res.ok) throw new Error('Download failed');
+      const blob = await res.blob();
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'piano_composer_extension.zip';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+    } catch (e) {
+      setStatus('Could not download extension ZIP');
+    }
+  }
+
   function show(el) { el.classList.remove('hidden'); }
   function hide(el) { el.classList.add('hidden'); }
 
@@ -735,10 +777,18 @@
       to: toInput.value || undefined,
       bearer: bearerInput.value.trim(),
     };
+    // Fallback to extension token if field is empty
     if (!payload.bearer) {
-      setStatus('Bearer token is required');
-      return;
+      try {
+        const extTok = (localStorage.getItem('composer_bearer') || '').trim();
+        if (extTok) {
+          payload.bearer = extTok;
+          if (bearerInput) bearerInput.value = extTok;
+          setStatus('Using token from extension');
+        }
+      } catch {}
     }
+    if (!payload.bearer) { setStatus('Bearer token is required'); return; }
 
     // Persist last used values (excluding bearer)
     persistForm();
@@ -792,6 +842,8 @@
 
   // init
   loadBrands();
+  // try to show any existing token captured earlier
+  syncBearerFromExtensionLocal();
 
   // ---------------
   // Persistence
@@ -877,6 +929,12 @@
           // Fetch composer data directly and render a compact table
           const f = (fromAuto && fromAuto.value) || (fromInput && fromInput.value) || undefined;
           const t = (toAuto && toAuto.value) || (toInput && toInput.value) || undefined;
+          // Highlight selected item
+          list.querySelectorAll('.item').forEach(el => el.classList.remove('selected'));
+          div.classList.add('selected');
+          // Set experience title above module
+          const expTitle = document.getElementById('exp-title');
+          if (expTitle) { expTitle.textContent = `Experience: ${title} (${idText})`; expTitle.classList.remove('hidden'); }
           fetchComposerData(brandAuto && brandAuto.value, idText, composerBearer, f, t);
         });
         list.appendChild(div);
@@ -936,13 +994,19 @@
   async function fetchComposerData(brandNameOrAid, expId, bearer, fromOverride, toOverride) {
     const aid = (resolveAidLocal(brandNameOrAid) || brandNameOrAid || '').trim();
     if (!expId || !bearer) return;
+    // Always try to use the freshest token from extension if available
+    let useBearer = (bearer || '').trim();
+    try {
+      const extTok = (localStorage.getItem('composer_bearer') || '').trim();
+      if (extTok) useBearer = extTok;
+    } catch {}
     const params = {
       expId,
       aid,
       ln: 'en_US',
       from: fromOverride || (fromInput && fromInput.value) || undefined,
       to: toOverride || (toInput && toInput.value) || undefined,
-      bearer,
+      bearer: useBearer,
     };
     try {
       const res = await fetch('/api/report', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(params) });
@@ -1298,6 +1362,7 @@
           if (!cur) {
             setComposerStatus('No response from extension. Ensure it\'s installed, has access to this site (Site access: On), and the Piano dashboard tab is open while capturing. Then click Connect again.');
           }
+          showComposerTokenPreview(cur);
         }, 2000);
       } catch {
         setComposerStatus('Could not post message to extension.');
@@ -1310,27 +1375,9 @@
   if (dlExt && !dlExt._wired) {
     dlExt._wired = true;
     dlExt.addEventListener('click', (e) => {
-      // Some SPA routers may prevent default; ensure full navigation
+      e.preventDefault();
       e.stopPropagation();
-      // Let the browser handle the navigation normally
-      // If nothing happens, try programmatic fetch as fallback
-      setTimeout(async () => {
-        // If user stayed on page and no download started, attempt manual fetch
-        try {
-          const res = await fetch('/download/extension.zip');
-          if (res.ok) {
-            const blob = await res.blob();
-            const url = URL.createObjectURL(blob);
-            const a = document.createElement('a');
-            a.href = url;
-            a.download = 'piano_composer_extension.zip';
-            document.body.appendChild(a);
-            a.click();
-            document.body.removeChild(a);
-            URL.revokeObjectURL(url);
-          }
-        } catch {}
-      }, 150);
+      triggerExtensionZipDownload();
     });
   }
   // Info page ZIP link
@@ -1338,23 +1385,9 @@
   if (dlExtInfo && !dlExtInfo._wired) {
     dlExtInfo._wired = true;
     dlExtInfo.addEventListener('click', (e) => {
+      e.preventDefault();
       e.stopPropagation();
-      setTimeout(async () => {
-        try {
-          const res = await fetch('/download/extension.zip');
-          if (res.ok) {
-            const blob = await res.blob();
-            const url = URL.createObjectURL(blob);
-            const a = document.createElement('a');
-            a.href = url;
-            a.download = 'piano_composer_extension.zip';
-            document.body.appendChild(a);
-            a.click();
-            document.body.removeChild(a);
-            URL.revokeObjectURL(url);
-          }
-        } catch {}
-      }, 150);
+      triggerExtensionZipDownload();
     });
   }
 
@@ -1380,8 +1413,10 @@
     if (data && data.type === 'PIANO_COMPOSER_BEARER' && data.token) {
       try {
         localStorage.setItem('composer_bearer', data.token);
+        if (bearerInput) { bearerInput.value = data.token; persistForm(); }
         setComposerStatus('Connected to Piano (Composer token received).');
         setStatus('');
+        showComposerTokenPreview(data.token);
       } catch {}
     }
   });

@@ -135,6 +135,10 @@
       <div class="panel">
         <h3>Connect to Piano (Composer token)</h3>
         <p class="status" id="composer-status">Not connected. You can paste a token or connect via extension.</p>
+        <div id="composer-token-wrap" class="status hidden">
+          <label style="display:block; font-size:12px; color:#a3b3c6; margin-bottom:4px;">Current token (temporary)</label>
+          <input id="composer-token" type="text" readonly style="width:100%;" />
+        </div>
         <div class="actions">
           <button id="connectComposer" type="button">Connect via Browser Extension</button>
           <a href="/download/extension.zip" id="download-extension" download>Download Extension (ZIP)</a>
@@ -155,6 +159,7 @@
             <div id="exp-list" class="list"></div>
           </div>
           <div>
+            <h3 id="exp-title" class="hidden"></h3>
             <div id="exp-data" class="table-wrap"></div>
           </div>
         </div>
@@ -175,6 +180,7 @@
           <div class="status" style="margin-top:4px;">Note: Browsers often block direct links to <code>chrome://</code> pages. Copy the URL and paste it into the address bar.</div>
         </li>
         <li>Open the Piano dashboard in a tab: <a href="https://dashboard.piano.io/publisher/home" target="_blank" rel="noopener">Piano Dashboard</a>.</li>
+        <li>In the dashboard, open an experience and click its <strong>Conversion Report</strong> so a composer conversion API request is made; the extension will capture its Bearer token.</li>
         <li>Return here and click <strong>Connect via Browser Extension</strong>. The status should read: “Connected to Piano (Composer token received).”</li>
         <li>Manual tab: paste or use the captured token, choose brand, expId, and date range, then Fetch.</li>
         <li>Automatic tab: choose brand and click Load Experiences; then click an experience to view its data.</li>
